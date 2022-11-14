@@ -1,0 +1,86 @@
+* O que é programação?
+R: É o ato de entender um problema do mundo real e abstrair informações deste problema. Após, organizar estas informações de forma lógica para transforma-las em um algoritmo através de uma linguagem de programação de sua preferência. Assim o computador entenderá as instruções escritas na linguegem e executará este algoritmo em sequência até a última linha de instrução.
+
+Exemplo: fazer um bolo, andar de bicicleta, viajar, acordar, dormir e tantas outras situações do dia-a-dia.
+
+==========================================
+
+* Lógica de programação?
+R: É a forma que ordenamos nossos pensamentos para transforma-los em instruções e são estas intruções que são passadas para o computador.
+
+O computador recebe nossas instruções e entende elas como ordens. E processa estas ordens passadas para ele através da linguagem de programação, com isso aquele algoritmo é transaformado em um programa de computador.
+
+DESAFIO
+** Fazer Café **
+
+1. abrir a porta da dispnsa;
+2. pegar o pacote de café;
+3. abrir o pacote de café;
+4. colocar o pacote de café sobre a pia da cozinha;
+5. abrir gaveta;
+6. pegar uma colher;
+7. colocar a colher sobre a pia da cozinha;
+8. pegar o filtro de papel;
+9. colocar o filtro de papel sobre a pia da cozinha;
+10. fechar a gaveta;
+11. abrir o armário;
+12. pegar uma caneca;
+13. colocar a caneca sobre a pia da cozinha;
+14. pegar a garrafa térmica;
+15. colocar a garrafa sobre a pia da cozinha;
+16. tirar a tampa da garrafa térmica;
+17. colocar a tampa sobre a pia da cozinha;
+18. pegar o filtro de plástico;
+19. colocar o filtro de plástico sobre a pia da cozinha;
+20. colocar o filtro de plástico sobre a garrafa térmica;
+21. colocar o filtro de papel dentro do filtro de plástico;
+22. pagar a colher;
+23. colocar a colher dentro do pacote de café;
+24. escolher uma quantidade de pó de café;
+25. repitir o passo anterior por três vezes;
+26. soltar a colher sobre a pia da caozinha;
+27. pegar a caneca;
+28. colocar a canexa sob a torneira da pia da cozinha;
+29. abrir a torneira;
+30. deixar a torneira aberta até a quantidade de água estar na metade da caneca;
+31. fechar a troneira;
+32. colocar a caneca sobre o bico do fogão;
+33. apertar o botão acendedor do fogão para acender o fogo;
+34. esquentar a água até um pouco antes da água ferver;
+35. apagar o fogo;
+36. pegar a caneca com água;
+37. despejar a água dentro do filtro de papel sobre o pó de cafe;
+38. aguardar a água desaparecer dentro do filtro de papel;
+39. retirar o filtro de plástico da garrafa térmica;
+40. colocar o filtro de plático sobre a pia da cozinha;
+41. pegar a tampa da garrafa;
+42. colocar a tampa na garrafa;
+43. girar a tampa até ela tracar;
+
+-------
+
+** Postar no Instagram **
+
+1. pegar o celular;
+2. desbloquear o celular;
+3. abrir o aplicativo do Instagram;
+4. clicar no ícone com sinal de adição dentro de um quadrado no topo da tela;
+5. clicar sobre a palavra Story para ativar o aplicativo da câmera;
+6. clicar no ícone com desenho de uma câmera com duas setas dentro apontando para lados opostos para virar a câmera;
+7. pressione o botão em forma de círculo preenchido na cor branca na parta inferior da tela;
+8. clique no botão Seus Stories;
+9. aguarde a publicação ser concluída;
+
+===========================================
+
+* O que é e como funciona a web?
+
+São várias redes de computadores distribuídas pelo planeta inteiro e que estão interligadas. Esta rede funciona da seguinte forma: abrimos o navegador de internet e digitamos um endereço, por exemplo: https://www.rocketseat.com.br . Este endereço é transformado e um número de IP que pergunta ao servidor se ele tem conteúdo deste endereço para nos retornar. Se tiver, o servidor retornará uma página estruturada e estilizada, podendo ser interativa ou não. Se não tiver conteúdo, servidor também retornará uma página estruturada e estilizada, porém com uma mensagem informando que não encontrou a página por algum motivo.
+
+===========================================
+
+* Front-end vs Back-end
+
+Front-end (quem faz o pedido) -> É a parte do site que o usuário enxerga no navegador. Composta por HTML (estrutura), CSS (estilo) e Javascript (animações).
+
+Back-end (quem recebe o pedido) -> Cuida onde os dados estão armazenados. Contém a lógica da aplicação. Composta por Javascript (Node.JS) e banco de dados (PostgreSQL).

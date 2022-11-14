@@ -1,0 +1,267 @@
+Apresentando o aplicativo
+
+Anotações
+
+Nessa aula apresentaremos o projeto que vamos desenvolver neste nível.
+
+======================================
+
+Estrutura HTML do FocusTimer
+
+O significa a sigla SEO e qual a sua funcionalidade?
+
+SEO é a sigla de Search Engine Optimization (otimização de mecanismos de busca) e é o conjunto de técnicas usadas, geralmente divididas entre tecnologia, conteúdo e autoridade, para alcançar bom posicionamento de páginas de um site no Google e em outros buscadores, gerando tráfego orgânico.
+
+=======================================
+
+Iniciando os estilos do app FocusTimer
+
+Nessa aula começaremos a estilizar o nosso projeto utilizando todos os conceitos que aprendemos até agora com CSS.
+
+=======================================
+
+Ajustando larguras e tamanhos com CSS clamp
+
+O que faz a propriedade clamp() no CSS?
+
+A função CSS fixa um valor entre um limite superior e inferior. permite selecionar um valor intermediário dentro de um intervalo de valores entre um mínimo e um máximo definidos. São necessários três parâmetros: um valor mínimo, um valor preferencial e um valor máximo permitido. A função pode ser usada em qualquer lugar onde , , , , , ou seja permitido.clamp() clamp()clamp()
+
+=======================================
+
+Alinhando com grid e finalizando o CSS
+
+A propriedade justify-self: end e align-self: center fará com que o conteúdo fique posicionado em qual lugar da tela?
+
+
+Não!
+
+justify-self: end => alinha o(s) elemento(s) no final do eixo X.
+
+align-self: center => alinha o(s) elemento(s) no centro do eixo Y.
+
+========================================
+
+Introdução a DOM do Browser
+
+O que é DOM?
+
+Document Object Model (Modelagem de Documentos por Ojetos): Trata-se de uma interface padronizada que permite sua manipulação por navegadores e scripts.
+
+=========================================
+
+Event-driven, programação imperativa e callbacks.
+
+O que é uma função callback?
+
+Uma função de retorno de chamada é uma função passada para outra função como um argumento, que é então invocado dentro da função externa para completar algum tipo de rotina ou ação.
+
+Exemplo:
+
+function greeting(name) {
+  alert('Hello ' + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+
+processUserInput(greeting);
+
+-----
+
+DOM = Document Object Model (Modelagem de Documentos por Ojetos)
+Event-driven = DOM é direcionada a eventos
+Programação imperativa = é um método de programação onde é seguido um passo-a-passo do que deve ser feito
+Callback = chamar uma função de volta após a execução de um evento na página. Para isso esta função deverá ter sido passado como argumento de um evento.
+
+==========================================
+
+Refatorando para novas funcionalidades
+
+Quais os motivos de refatorarmos um código?
+
+Deixar mais legível para você mesmo e outras pessoas desenvolvedoras;
+Deixa-lo mais performático;
+Reduzir redundâncias de código;
+
+===========================================
+
+Iniciando a lógica para o contador
+
+
+O que é recursividade?
+
+É a ação de uma função chamar ela mesma.
+
+===========================================
+
+Avançando na lógica com pequenos passos
+
+Nessa aula avançaremos um pouco mais na lógica do nosso contador e encontraremos alguns bugs que resolveremos nas próximas aulas.
+
+-------------------
+
+secondsDisplay.textContent = String(seconds - 1).padStart(2, "0")
+
+padStart(2, "0") = preenche com a quantidade e o caracter que deseja que seja inserido como preenchimento
+
+==========================================
+
+Princípios de Clean Code e programação declarativa
+
+O que é Clean Code?
+
+Nomes significativos para funções e variáveis. Que outros(as) programadores(as) ou você mesmo entenda quando retornar para fazer manutenção
+
+==========================================
+
+Resetando o cronômetro e entendendo escopos
+
+O que são escopos no JavaScript?
+
+São limitações onde uma determinada variável, de mesmo nome ou não, pode ser utilizada.
+
+Exemplo:
+
+1. let minutes = Number(minutesDisplay.textContent)
+
+2. function updateTimerDisplay(minutes, seconds) {
+  minutesDisplay.textContent = String(minutes).padStart(2, "0")
+  secondsDisplay.textContent = String(seconds).padStart(2, "0")
+}
+
+function resetTimer() {
+  3. updateTimerDisplay(minutes, 0)
+  clearTimeout(timerTimeOut)
+}
+
+
+Na linha 1 temos a variável declarada que pode ser utilizada pelo código inteiro.
+
+Na linha 2 temos outra variável, de mesmo nome, passada como argumento/ parâmetro para a função updateTimerDisplay(minutes, seconds) {}, que pode ser usada somente dentro do bloco desta função. NÃO é a mesma variável da linha 1!
+
+Já na linha 3, estamos passando a variável minutes da linha 1 (escopo global) como argumento para a função updateTimerDisplay(minutes, 0).
+
+==========================================
+
+Introdução aos ES6 Modules
+
+Por que devemos modularizar um projeto?
+
+Para não poluir o arquivo .html com varias chamadas de linhas de scripts.
+
+Assim:
+
+- Forma antiga
+
+<script src="js/index.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/timer.js"></script>
+
+
+- Forma nova
+
+<script src="js/index.js" type="module"></script>
+
+
+Neste caso, no arquivo index.js, realizamos a importação dos módulos que serão utilizados neste arquivo.
+
+Assim:
+
+import resetControls from "./controls"
+import resetTimer from "./timer"
+
+
+
+IMPORTANTE:
+
+Não podemos esquecer de exportar os módulos. Caso não seja feito, o módulo não poderá ser utilizados em outros arquivos.
+
+function resetControls() {
+  buttonPlay.classList.remove('hide')
+}
+
+export default resetControls
+
+==========================================
+
+Continuando a modularização e resolvendo erros
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula daremos continuidade na modularização e resolveremos alguns erros do nosso projeto.
+
+==========================================
+
+Criando objetos com o padrão Factory e injeção de dependências
+
+O que é injeção de dependências?
+
+Injeção de dependências é uma técnica onde um objeto (ou método estático) fornece as dependências de outro objeto. Uma dependência é um objeto que pode ser usado (um serviço).
+
+==========================================
+
+Refatorando os controles
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula corrigiremos os bugs depois de transformamos o nosso projeto no padrão Factory.
+
+===========================================
+
+Resolvendo bugs e conversando sobre complexidade de projetos
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula continuaremos a resolução de bugs da nossa aplicação e daremos uma visão geral do mundo profissional e complexidade de projetos na vida real.
+
+Este projeto já poderia ter terminado faz tempo, porém como estamos em treinamento, foi preciso deixa-lo complexo para aprendermos. Pois quando eu chegar ao nível sênior, irei fazer funcionar da forma mais simples possível e somente depois irei verificar se é necessário deixar op projeto complexo.
+
+===========================================
+
+Últimos ajustes do contador
+
+O que é um ternário? Exemplifique abaixo
+
+É um tipo de expressão de uma única linha onde é executada em três etapas.
+
+Assim:
+
+newMinutes = newMinutes === undefined ? minutes : newMinutes
+seconds = seconds === undefined ? 0 : seconds
+
+Se a comparação for verdadeira ele pega o valor logo após o "?", caso contrário pega o valor após os ":"
+
+===========================================
+
+Adicionando Sons
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula adicionaremos sons ao nosso contador, aprenderemos novos construtores que referenciam sons do HTML diretamente pelo JavaScript.
+
+============================================
+
+Finalizando a aplicação
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula revisaremos tudo que desenvolvemos até agora, além disso, faremos o último Factory no nosso projeto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

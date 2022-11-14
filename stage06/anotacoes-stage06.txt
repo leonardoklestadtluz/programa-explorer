@@ -1,0 +1,196 @@
+Stage 06 - Javascript antes do framework
+
+
+==================================================
+
+Conceitos de SPA
+
+Nessa aula aprenderemos os conceitos do SPA, a diferença entre uma aplicação que não utiliza e outra que utiliza essa tecnologia.
+
+===========================
+
+Alterando comportamento padrão do evento de redirecionamento
+
+Qual evento altera o comportamento padrão do roteamento de uma página web?
+
+event.preventDefault()
+
+===========================
+
+Mapeando as rotas
+
+Qual a propriedade do JavaScript que exibe o caminho das rotas?
+
+Propriedade history.
+
+Exemplo: window.history.pushState({}, "", event.target.href)
+
+============================
+
+Javascript Assíncrono e Promises
+
+O que são Promises?
+
+É a quebra do padrão de excução do Javascript, porém a aplicação não fica travada aguardando o término de algum procedimento.
+
+Este procedimento é retirado da fila e após sua finalização, retorna para fila para ser exibido ao usuário, por exemplo.
+
+============================
+
+Finalizando as funcionalidades e reorganizando a aplicação
+
+O que faz a propriedade element.innerHTML ?
+
+O innerHTML é uma propriedade do Element que define ou retorna o conteúdo HTML de um elemento. Essa propriedade geralmente é escrita no DOM (Document Object Model), através do JavaScript.
+
+Exemplo:
+
+fetch(route)
+    .then((data) => data.text())
+    .then((html) => {
+      document.querySelector("#app").innerHTML = html;
+    });
+
+
+=============================
+
+Orientação a objetos no Javascript
+
+O que são Classes no JavaScript? Exemplifique abaixo
+
+São funções especiais que usamos para instanciar/ criar objetos a partir delas.
+
+Exemplo:
+
+class Router {
+  sayHello() {
+    alert("hello");
+  }
+}
+
+const router = new Router();
+
+router.sayHello();
+
+
+Em outras palavras, imagine algumas formas de bolo, forma quadrada, redonda e retangular. E a partir delas você pode fazer bolos com formatos diferentes a partir destas formas.
+
+Exemplo: bolo quadrado, redondo e retangular.
+
+
+=============================
+
+Mais conceitos de Orientação a Objetos
+
+Mais conceitos de Orientação a Objetos
+
+Qual nome é dado quando uma função está dentro de uma classe?
+
+Método.
+
+Exemplo:
+
+class Bird {
+  
+  // METHOD == FUNCTION
+  voar() {
+    alert('Voar')
+  }
+}
+
+
+=============================
+
+Adicionando um servidor local e simples com NodeJS
+
+O que é um arquivo .json ?
+
+É uma estrutura de dados em forma de texto com propriedades e valores. Muito semelhante a um objeto em Javascript.
+
+Exemplo:
+
+{
+  "name": "projeto07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+=============================
+
+TEMPO >>> 00:00:00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

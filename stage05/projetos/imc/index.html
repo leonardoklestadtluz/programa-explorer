@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- STYLE OF FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- STYLE OF PAGE -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- TITLE OF PAGE -->
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+
+    <!-- ALERT ERROR -->
+    <div class="alert-error">
+      Digite somente números
+    </div>
+
+    <!-- CONTATINER -->
+    <div class="container">
+
+      <!-- MAIN -->
+      <main class="card">
+
+        <!-- FORM -->
+        <form action="">
+          <h1 class="title">Cálculo de IMC</h1>
+
+          <!-- INPUT WRAPPER -->
+          <div class="input-wrapper">
+            <label for="weight">Peso (Kg)</label>
+            <input type="text" id="weight" placeholder="60">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="">Altura (cm)</label>
+            <input type="text" id="height" placeholder="167">
+          </div>
+
+          <!-- BUTTOM -->
+          <button type="submit">
+            Calcular IMC
+            <img src="./assets/arrow.svg" alt="Seta apontado paradireita">
+            
+          </button>
+
+        </form>
+      </main>
+
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper">
+      
+      <!-- MODAL CARD -->
+      <div class="modal card">
+        <h2 class="modal-title">
+          <button class="close">
+            <img src="./assets/close.svg" alt="Botão para fechar modal">
+          </button>
+
+          <!-- RESULT IMC -->
+          <span></span>
+        </h2>
+
+      </div>
+    </div>
+
+    <!-- SCRIPT PRINCIPAL -->
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>

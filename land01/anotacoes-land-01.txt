@@ -1,0 +1,44 @@
+Mapa da Jornada
+
+Fique a vontade para adicionar qualquer anotação
+
+Nesta aula introdutória, iremos te apresentar tudo o que será abordado aqui no Explorer.
+Também iremos trazer dicas para que você consiga se relacionar de maneira eficiente, já que nós, da Rocketseat, entendemos que a comunicação é uma habilidade não técnica importantíssima para a rotina de um dev.
+
+====================================================
+
+Alinhando a mentalidade
+
+Fique a vontade para adicionar qualquer anotação
+
+Nesta aula traremos uma visão de como devemos nos relacionar na comunidade como pessoas desenvolvedoras. O aprendizado trará mais resultado estudando em grupo e isso nos deixará mais motivado para estudar. Conhecer pessoas e fazer networking é super importante. Deixar a vergonha, medos e julgamentos pra lá e entender que todos estamos aqui para aprender. Focar no que realmente importa e lembrar que a evolução é constante.
+
+====================================================
+
+Tirando o melhor proveito do Discord e do fórum
+
+Fique a vontade para adicionar qualquer anotação.
+
+Todos os anúncios oficiais da Rocketseat são feitos através do Discord. É muito importante ter o Discord sempre em mãos para ficar antenado para não perder nenhuma novidade.
+
+É importante respeitar as regras e utilizar os canais corretamente. Códigos podem ser compartilhados no codepen.io, codeshare.io, github.com e no próprio Discord utilizando as `````
+
+O download do Discord pode ser efetuado diretamente por este link
+
+O fórum ele tem o objetivo de dúvidas técnicas onde nossos instrutores estarão sempre por lá. Lembre-se sempre de ser muito claro ao publicar a sua dúvida, utilizando o template disponível.
+
+=====================================================
+
+Dicas de Experts
+
+Fique a vontade para adicionar qualquer anotação.
+
+As dicas dos Experts são pessoas que trabalham na Rocketseat e que vieram através da comunidade. O que podemos tirar disso tudo é: Seja direto ao fazer perguntas, não existe perguntas bobas. Seja claro ao se comunicar na comunidade com os detalhes do seu erro, compartilhe conhecimento com outros devs, seja por texto, vídeo. Seja ativo na comunidade e faça networking. Com todas essas dicas dos nossos experts impossível você não se destacar e chegar no próximo nível.
+
+======================================================
+
+Conclusão e desafio
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nesta aula recapitulamos tudo que foi visto nas aulas anteriores e lançamos um desafio para você. 🚀

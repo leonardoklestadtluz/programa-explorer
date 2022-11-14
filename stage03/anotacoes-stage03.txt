@@ -1,0 +1,382 @@
+********* ETAPA 1 *********
+
+Visão geral do projeto
+
+Neste primeiro módulo iremos aprender sobre formulários na web. inicamos pelos conceitos e após iremos para a prática.
+
+==========================================================
+
+Quais os tipos de inputs mostrados na aula e para que serve cada um deles?
+
+text = neste campo é possível a inserção de strings (letras, números ou caracter especial)
+
+number = já este permite a inserção somente de números, possuí uma espécie de validação.
+
+password = este permite a inserção de string também, porém ele coloca uma máscara nos caracteres digitados.
+
+==========================================================
+
+Qual a diferença do método GET e POST?
+
+GET: receber e enviar recursos através da URL
+
+POST: envia recursos no corpo da requisição
+
+==========================================================
+
+O que faz o tipo de input hidden?
+
+A tag <INPUT> com o atributo type="hidden" permite definir dados que são passados a um programa CGI mas não aparecem ao utilizador do formulário. Este campo serve para memorizar valores durante um diálogo com o utilizador.
+
+
+==========================================================
+
+Por que utilizamos o Live Server?
+
+Porque ele usa o protocolo http e cria um servidor dentro do VSCode. Quando abrimos o arquivo através dele é utilizado um endereço de IP, seguido de uma porta e o nome do arquivo.
+
+Assim: http://127.0.0.1:5500/index.html
+
+Número da porta pode variar de computador para computador. Outro detalhe é que ele tem a funcionalidade de live-reload, quando editamos e salvamos o arquivo o live-reload atualiza a página sem a necessidade de atualiza-la manualmente.
+
+===========================================================
+
+O que faz a propriedade z-index?
+
+Esta propriedade serve para sobrepormos um elemento sobre o outro.
+
+** HTML **
+<div class="quadrado-1">Quadrado 1</div>
+<div class="quadrado-2">
+  Quadrado 2 <br>
+  com z-index: 1
+</div>
+<div class="quadrado-3">Quadrado 3</div>
+
+** CSS **
+div {
+  border: 2px solid black;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: 200px;
+  padding: 20px;
+  position: fixed;
+  width: 200px;
+}
+
+.quadrado-1 {
+  background-color: blueviolet;
+}
+
+.quadrado-2 {
+  background-color: lightcoral;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+}
+
+.quadrado-3 {
+  background-color: lightgreen;
+  left: 100px;
+  top: 100px;
+}
+
+===========================================================
+
+Qual a diferença das tags fieldset e legend ?
+
+fieldset = serve para informar um agrupamento de campos.
+legend = descreve uma legenda para este conjunto de campos.
+
+============================================================
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nesta aula vimos algumas formatações comuns e uma questão interessante sobre acessibilidade.
+
+Contraaste de textos. Na ferramenta Devtools do navegador aparece uma sessão rferente sobre acessibilidade quando descansamos o mouse sobre o elemento, neste caso um texto.
+
+Esta funcionalidade mostra se o contraste está em um nível aceitavel para quem tem limitação visual.
+
+Outra questão foi um bug que tem no elemento fieldset. Ele não reconhece o elemento legend como seu elemento filho. Aplicamos uma estratégia para podéssemos aplicar o estilo a ele.
+
+A solução foi criar uma dive <div class="fieldset-wrapper"></div> contendo a classe fieldset-wrapper e envelopando todos os elementos filho de fieldset com esta div.
+
+Assim: 
+
+<fieldset>
+	<div class="fieldset-wrapper">
+	    <legend>Informações do Evento</legend>
+	
+	    <div class="input-wrapper">
+	        <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
+	        <input type="text" id="event-title" />
+	    </div>
+	
+	    <div class="input-wrapper">
+	        <label for="event-link">Link do evento <span>(comece com https://)</span></label>
+	        <input type="url" id="event-link" />
+	    </div>
+	
+	    <div class="input-wrapper">
+	        <label for="event-whatsapp">Whatsapp para contato <span>(somente números)</span></label>
+	        <input type="number" id="event-whatsapp" />
+	    </div>
+	
+	    <div class="input-wrapper">
+	        <label for="event-info">Informações extras</label>
+	        <textarea name="event-info" id="event-info"></textarea>
+	    </div>
+	</div
+</fieldset>
+
+=====================================================
+
+Qual é a utilidade da tag <textarea> ?
+
+Serve para controlar a edição de uma caixa de texto. Últil para permitir que o usuário digite um texto extenso em formato livre. como uma comentário em um formulário, por exemplo.
+
+======================================================
+
+Estilizando o campo select
+
+O que são vendor prefixes? 
+
+São propriedades pré-fixadas para serem utilizadas até que o navegador esteja padronizado para utilizá-la.
+
+Exemplo:
+
+Normalmente, os vendors usam esses prefixos:
+
+-webkit- (Chrome, Safari, versões mais recentes do Opera.)
+-moz- (Firefox)
+-o- (Versões antigas do Opera)
+-ms- (Internet Explorer)
+Os vendedores também usam prefixos em APIs. Em interfaces, eles normalmente usam:
+
+Webkit (Chrome, Safari, versões mais recentes do Opera.)
+Moz (Firefox)
+O (Versões antigas do Opera)
+MS (Internet Explorer)
+Em propriedades e métodos, eles normalmente usam:
+
+webkit (Chrome, Safari, versões mais recentes do Opera.)
+moz (Firefox)
+o (Versões antigas do Opera)
+ms (Internet Explorer)
+
+=====================================================
+
+Aplicando estilos aos agrupamentos restantes
+
+Qual a diferença do input tipo date e time?
+
+input date = aplica um input com um calendário para o usuário selecionar uma data.
+
+input time = aplica um input com um relógio para o usuário selecionar o horário.
+
+========================================================
+
+Checkbox customizado e com acessibilidade
+
+O que são pseudo-classes no CSS?
+
+Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado. Por exemplo, :hover pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele.
+
+=========================================================
+
+Criando estilos para o submit
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula fizemos a última sessão do nosso projeto, além disso, inserimos o botão na página e personalizamos de acordo com o layout.
+
+==========================================================
+
+Validando campos e submetendo formulários
+
+O que faz a propriedade require ? 
+
+Informa que um ou mais campos não podem ser deixados em branco.
+
+==========================================================
+==========================================================
+
+********* ETAPA 2 *********
+
+Introdução à responsividade
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula daremos início ao nosso novo projeto aplicando a responsividade. Isso faz com que o nosso site se adapte em diversas resoluções de tela.
+
+==========================================================
+
+Estruturando o HTML
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula começamos a estruturar o nosso projeto utilizando HTML.
+
+==========================================================
+
+Regra mobile-first
+
+O que é mobile-first ?
+
+Nessa aula começamos a estruturar o nosso projeto utilizando HTML.
+
+==========================================================
+
+Regra das unidades de medida flexíveis
+
+Quais são as unidades de medidas para trabalhar com responsividade?
+
+Unidade "EM (*emphemeral unit - unidade transitória*)" e "REM (root *emphemeral unit - unidade transitória raíz*)".
+
+Exemplo:
+
+body {
+	width: 1.8em;
+	height: 2.8rem
+}
+
+==========================================================
+
+Continuando ajustes de textos
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula prosseguimos ajustando os textos e alinhamentos de acordo com o layout do Figma.
+
+==========================================================
+
+Finalizando ajustes da versão mobile
+
+O que faz a propriedade max-width no CSS ?
+
+Define uma largura máxima para o layout, mesmo que a tela do dispositivo aumente de tamanho.
+
+==========================================================
+
+Versão Desktop
+
+Para que serve a at-rule @media no CSS ?
+
+Definir as regras de CSS quando dispositivo atinge tamanhos diferentes de tela.
+
+==========================================================
+
+Finalizando essa etapa
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula o Mayk levanta alguns pontos de atenção ao se trabalhar com responsividade, como a importância de testar o seu projeto em vários dispositivos.
+
+
+********* ETAPA 3 *********
+
+Apresentação do componente
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula é apresentado o projeto que iremos desenvolver em aula, trabalharemos com display: grid, transições, animações e responsividade.
+
+=========================================================
+
+Estruturando o HTML
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula começamos a estruturar o nosso projeto utilizando HTML
+
+=========================================================
+
+Variáveis e cores HSL no CSS
+
+Dê um exemplo de uma variáveis em CSS utilizando a cor em HSL.
+
+:root {
+  /* COLORS VARIABLES */
+  --hue: 250;
+  --bg-primary: hsl(var(--hue), 22%, 20%);
+  --fc-primary: hsl(var(--hue), 0%, 100%);
+  --fc-secondary: hsl(var(--hue), 50%, 80%);
+}
+
+=========================================================
+
+Estilzando o header
+
+Por que é importante resetar o CSS da página?
+
+Para retirar os estilos que o use agent (navegador) coloca por padrão.
+
+=========================================================
+
+Definindo largura máxima e alinhando o conteúdo
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula aprendemos uma nova propriedade no CSS para ajustar a imagem: object-fit e reforçamos ainda mais o aprendizado das aulas anteriores com a utilização do position.
+
+=========================================================
+
+Encaixando a imagem e sobrepondo o texto
+
+O que a propriedade object-fit faz em uma imagem?
+
+Faz com que a imagem fique contida no elemento independentemente do seu tamanho definido.
+
+=========================================================
+
+Finalizando os cards
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula finalizamos os cards do nosso projeto respeitando o layout do Figma.
+
+=========================================================
+
+Transições e transformações
+
+Qual a diferença da propriedade transform para o transition?
+
+transform = permite alterar a forma dos elementos. Podemos rotacionar, diminuir ou aumentar este elementos de acordo com os valores definidos.
+
+transition = podemos controlar a velocidade com que uma animção é realizada sobre um elemento.
+
+=========================================================
+
+Animações com CSS
+
+Para que serve a at-rule @keyframes ?
+
+Serve para controlar as etapas intermediarias em uma sequência de animações do CSS. Nos permite termos mais controle sobre estas etapas da sequência de animações.
+
+=========================================================
+
+Versão Desktop com CSS Grid
+
+O Flex pode ser utilizado em conjunto com o Grid?
+
+Sim! Podem trabalhar em conjunto, porém tem coisas que um faz de forma melhor que o outro.
+
+==========================================================
+
+Adicionando filtros em imagens com CSS
+
+O que podemos modificar em uma imagem utilizando a propriedade filter ?
+
+Brilho, saturação, bluer e ajustar alguns outros efeitos.
+
+==========================================================
+
+Ajustando textos com CSS Clamp
+
+O que faz a função clamp no CSS? E qual a sua sequência ?
+
+Permite definir um valor mínimo e um valor máximo entre um intervalo de valores.
+
+Valor mínimo, intermediário e valor máximo.
+
