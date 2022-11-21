@@ -125,69 +125,15 @@ Exemplo:
 
 =============================
 
+**** REVISÃO ****
+
+PRÓXIMA AULA >>> Adicionando um servidor local e simples com NodeJS
+
+=============================
+
+AULA DE AJUDA >>> 
+
 TEMPO >>> 00:00:00
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

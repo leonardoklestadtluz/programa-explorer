@@ -1,0 +1,92 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* VARIABLES AND BASE FONT */
+:root {
+  --colorOne: #c4c4cc;
+  --colorTwo: #e1e1e6;
+  --colorThree: #ffffff;
+
+  font-size: 62.5%;
+}
+
+/* BODY */
+body {
+  background: black; /* PROVISÓRIO*/
+  font-size: 2rem; /*PROVISÓRIO*/
+}
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header {
+  margin: 4rem 7.2rem 4rem;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 3.3rem;
+}
+
+/* MENU */
+nav {
+  display: flex;
+  gap: 3rem;
+}
+
+a {
+  color: var(--colorOne);
+  font-style: normal;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  text-decoration: none;
+}
+
+/* MAIN */
+main {
+  margin-top: 17.2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+p {
+  color: var(--colorTwo);
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+/* BUTTON */
+button {
+  background: none;
+  border: 2px solid var(--colorThree);
+  border-radius: 0.5rem;
+
+  color: var(--colorThree);
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  height: 4.8rem;
+  width: 19.5rem;
+}
