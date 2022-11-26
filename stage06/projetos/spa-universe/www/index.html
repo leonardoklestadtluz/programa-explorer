@@ -18,7 +18,7 @@
     <title>SPA - Universe</title>
 
     <!-- STYLE -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
 
   <body>
@@ -30,10 +30,10 @@
 
       <!-- MENU -->
       <nav>
-        <a href="/">Home</a>
-        <a href="/theUniverse.html">O Universo</a>
-        <a href="/exploratioin.html">Exploração</a>
-        <a href="/error.html">Erro</a>
+        <a href="/" onclick="route()">Home</a>
+        <a href="/theUniverse" onclick="route()">O Universo</a>
+        <a href="/exploration" onclick="route()">Exploração</a>
+        <a href="/404" onclick="route()">Erro</a>
       </nav>
     </header>
 
@@ -41,9 +41,38 @@
     <section class="container">
       <!-- MAIN -->
       <main>
-        <p>Explore o universo</p>
-        <button>Quero saber mais</button>
+        <!-- Conteúdo dinâmico -->
+        <section id="app"></section>
       </main>
     </section>
+
+    <script>
+      const routes = {
+        "/": "/pages/home.html",
+        "/theUniverse": "/pages/theUniverse.html",
+        "/exploration": "/pages/exploration.html",
+        404: "/pages/404.html",
+      };
+
+      function route(event) {
+        event = event || window.event;
+        event.preventDefault();
+
+        window.history.pushState({}, "", event.target.href);
+
+        handle();
+      }
+
+      function handle() {
+        const { pathname } = window.location;
+        const route = routes[pathname] || routes[404];
+        console.log("antes do fetch");
+        fetch(route)
+          .then((data) => data.text())
+          .then((html) => console.log(html));
+
+        console.log(route);
+      }
+    </script>
   </body>
 </html>
