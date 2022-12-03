@@ -131,7 +131,7 @@ PRÓXIMA AULA >>> Adicionando um servidor local e simples com NodeJS
 
 =============================
 
-AULA DE AJUDA >>> Finalizando as funcionalidades e reorganizando a aplicação
+AULA DE AJUDA >>> Adicionando um servidor local e simples com NodeJS
 
 TEMPO >>> 00:00:00
 
