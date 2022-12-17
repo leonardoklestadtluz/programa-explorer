@@ -2,7 +2,7 @@
 
 
 
-![Explorer program image](C:\Users\Leonardo k. Luz\Documents\Rocketseat\explorer\assets\explorer-program-image.png)
+![Explorer program image](/assets/explorer-program-image.png)
 
 O programa Explorer da Rocketseat - Code School tem por objetivo auxiliar o dev a conquistar sua primei vaga como programador.
 
