@@ -77,21 +77,32 @@ main {
   gap: 2.4rem;
 }
 
+section#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+/* HOME */
 h1 {
   color: var(--colorThree);
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
 }
 
 p {
   color: var(--colorTwo);
-  font-size: 4.8rem;
-  font-weight: 700;
 }
 
 /* BUTTON */
 button {
   background: none;
   border: 2px solid var(--colorThree);
-  border-radius: 0.5rem;
+  border-radius: 1.3rem;
 
   color: var(--colorThree);
   font-style: normal;
@@ -106,9 +117,20 @@ button {
   height: 4.8rem;
   width: 19.5rem;
 
-  transition: 800ms;
+  transition: 500ms;
 }
 
 button:hover {
   border: 2px solid var(--colorFour);
+  box-shadow: 1px 1px 15px var(--colorThree);
+}
+
+a#text-button {
+  color: var(--colorFour);
+  text-decoration: none;
+  transition: 500ms;
+}
+
+a#text-button:hover {
+  color: var(--colorThree);
 }
