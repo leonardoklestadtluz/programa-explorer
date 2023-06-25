@@ -1,0 +1,148 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE COLORS AND FONTS */
+:root {
+  /* Colors */
+  --color-one: #4A4E69;
+  --color-two: #8E9AAF;
+  --color-three: #CBC0D3;
+  --color-four: #FEEAFA;
+  --color-five: #EFF1FF;
+  --color-six: #FFFFFF;
+  --color-seven: rgba(0, 0, 0, 0.25);
+  --color-eight: #23053A;
+
+  /* Size font */
+  font-size: 62.5%;
+}
+
+/* BODY */
+body {
+  background: var(--color-five);
+
+  padding: 30rem 3.2rem 6rem;
+}
+
+/* HEADER */
+header {
+  background: var(--color-two);
+  width: 100%;
+  height: 27.9rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGE LOGO */
+header img {
+  height: 13.7rem;
+  width: 13.7rem;
+}
+
+/* TITLE LOGO */
+div#title-logo {
+  background: var(--color-three);
+
+  color: var(--color-six);
+  font-family: 'Staatliches', cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 3.4rem;
+  text-shadow: 0 0.2rem 0.2rem var(--color-seven);
+
+  margin-top: 3.2rem;
+
+  padding: 0.8rem 0;
+
+  text-align: center;
+
+  width: 100%;
+
+}
+
+/* PAGE */
+div.page {
+  margin: 1.4rem 3.2rem 6rem;
+
+  max-width: 46rem;
+}
+
+/* DESCRIPTION */
+p.description {
+  color: var(--color-eight);
+  font-family: 'Palanquin', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+
+  max-width: 48rem;
+
+  text-align: center;
+}
+
+/* SPAN */
+span {
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+}
+
+/* WRAPPERS */
+div.wrappers {
+  margin-top: 6.3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+/* TYPES CREAMS */
+div.type {
+  background: var(--color-four);
+  border-radius: 2rem;
+  height: 3.5rem;
+  width: 11.2rem;
+
+  color: var(--color-one);
+  font-family: 'Staatliches', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 3.4rem;
+  text-align: center;
+
+  position: absolute;
+  left: 25rem;
+}
+
+div#palette {
+  top: 58rem;
+}
+
+div#shake {
+  top: 87rem;
+}
+
+div#pasta {
+  top: 135rem;
+}
+
+div#popsicle {
+  top: 164rem;
+}
+
+/* FONTS PROJECT 
+ font-family: 'Palanquin', sans-serif;
+ font-family: 'Staatliches', cursive;

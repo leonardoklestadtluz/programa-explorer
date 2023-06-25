@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ESTILOS DE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <!-- ARQUIVO DE ESTILOS DA PÁGINA -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- TÍTULO DA PÁGINA -->
+    <title>MENTORIA</title>
+  </head>
+
+  <body>
+
+    <!-- PAGE -->
+    <div class="page">
+      
+      <!-- HEADER -->
+      <header>
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </header>
+  
+      <!-- FORM -->
+      <form action="">
+
+        <!-- PERSONAL DATA -->
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+           
+          <div class="col-2">
+            <!-- INPUTS -->
+             <div class="wrapper">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name"/>
+            </div>
+
+             <div class="wrapper">
+              <label for="surname">Sobrenome</label>
+              <input type="text" name="surname" id="surname"/>
+             </div> 
+          </div>
+            
+          <div class="wrapper">
+            <label for="email">E-mail <span>(digite um e-mail válido)</span></label>
+            <input type="email" name="email" id="email" class="all-width" />
+          </div>
+          
+          <div class="wrapper">
+            <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" name="password" id="password" class="all-width" />
+          </div>
+
+        </fieldset>
+
+        <!-- MENTOR INFORMATION -->
+        <fieldset>
+          <legend>Informações do Mentor</legend>
+          
+          <div class="wrapper">
+            <label for="mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" name="mentor-name" id="mentor-name" class="all-width" />
+          </div>
+        </fieldset>
+  
+        <!-- YOUR AVAILABLE TIMES -->
+        <fieldset>
+          <legend>Seus horários disponíveis</legend>
+          
+          <!-- FIRST MENTORSHIP -->
+          <h2>Primeira mentoria</h2>
+          <div class="col-3">
+            <div class="wrapper">
+                <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="date" id="date" class="blank" />        
+            </div>
+
+            <div class="wrapper">
+              <label for="hour-begin">Das</label>
+              <input type="time" name="time" id="hour-begin" class="width-fields blank" />
+            </div>
+
+            <div class="wrapper">
+              <label for="hour-end">Até</label>
+              <input type="time" name="date" id="hour-end" class="width-fields blank" />     
+            </div>
+
+          </div>
+
+          <!-- SECOND MENTORSHIP -->
+          <h2>Segunda mentoria</h2>
+          <div class="col-3">
+            <div class="wrapper">
+                <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="date" id="date" />       
+            </div>
+
+            <div class="wrapper">
+              <label for="hour-begin">Das</label>
+              <input type="time" name="time" id="hour-begin" class="width-fields" />
+            </div>
+
+            <div class="wrapper">
+              <label for="hour-end">Até</label>
+              <input type="time" name="date" id="hour-end" class="width-fields " />     
+            </div>
+
+          </div>
+        </fieldset>
+      </form>
+  
+      <!-- FOOTER -->
+      <footer>
+        <button class="button-save" type="submit">Salvar</button>
+      </footer>
+    </div>
+  </body>
+</html>

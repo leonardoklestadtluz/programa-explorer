@@ -1,0 +1,95 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+  /* VARIABLES COLORS */
+  --bg-color: #121214;
+
+  --base-color: 194;
+  --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+  --primary-light: hsl(var(--base-color), 100%, 63%);
+  
+  --primary-color: #42d3ff;
+  --text-color: #fff;
+
+
+  /* SIZE FONT */
+  font-size: 62.5%;
+}
+
+/* BODY */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+
+  display: grid;
+  min-height: 100vh;
+}
+
+/* MAIN */
+main {
+  align-self: end;
+  justify-self: center;
+}
+
+/* TIMER */
+#timer {
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+  font-weight: 700;
+
+  margin-bottom: 1.6rem;
+
+  display: flex;
+
+}
+
+/* BUTTONS */
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.play svg path,
+.pause svg path,
+.sound-on svg path {
+  fill: var(--primary-color);
+}
+
+button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+/* HIDE */
+.hide {
+  display: none;
+}
+
+/* CONTROLS */
+#controls {
+  background-color: var(--bg-primary-light);
+  border-radius: 99.99rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 30vh, 10.8rem);
+}
+
+/* FOOTER */
+footer {
+  align-self: end;
+  justify-self: end;
+
+  padding: 0 4rem 3.2rem 0;
+}

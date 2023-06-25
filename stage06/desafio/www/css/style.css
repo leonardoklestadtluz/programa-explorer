@@ -1,0 +1,290 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+/* RESET STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  color: white;
+}
+
+/* Usado para acessibilidade e SEO da página.
+sr-only = screem only
+
+SEO [https://rockcontent.com/br/blog/o-que-e-seo/]
+
+Classe universal para ocultar elementos da tela, ou seja,
+o elemento está invisível para o usuário, mas não prejudica a
+leitura do elemento pelos leitore de tela.*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-with: 0;
+}
+
+/* VARIABLES COLORS AND FONT BASE */
+:root {
+  /* variables colors */
+  --bkg-page: #000000;
+  --bkg-search: #06181c;
+  --bkg-button-normal: #065e7c;
+  --bkg-button-hover: #073f51ff;
+  --bkg-scrollbar: #4a808c;
+  --bkg-header-tbl: #092d38;
+  --bkg-first-line: rgba (6, 22, 27, 0.5);
+  --bkg-next-line: #06181c;
+
+  --color-outline: #4a808c;
+  --color-star-notfound: rgba(78, 84, 85, 1);
+  --color-odd-line: rgba(6, 22, 27, 0.5);
+  --color-even-line: rgba(6, 24, 28, 1);
+
+  --img-button-normal: #ffffff;
+  --img-button-hover: #065e7c;
+
+  --tbl-border: #4a808c;
+
+  --txt-search: #7c7c8a;
+  --txt-buttom-normal: #ffffff;
+  --txt-buttom-hover: #065e7c;
+  --txt-table: #e1e1e6;
+  --txt-button-remove: #f75a68;
+  --txt-none-favorite: rgba(78, 84, 85, 1);
+
+  /* font base */
+  font-size: 62.5%;
+}
+
+/* BODY */
+body {
+  background: var(--bkg-page);
+}
+
+#app {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+/* HEADER PAGE */
+header {
+  margin: 11.5rem 0 8.7rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.search {
+  display: flex;
+  gap: 1rem;
+}
+
+input#favorite-search {
+  background: var(--bkg-search);
+  border-radius: 1.2rem;
+  color: var(--txt-search);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.7rem;
+
+  border: none;
+  box-shadow: none;
+  outline: 0;
+
+  height: 4.8rem;
+  width: 45rem; /* possível alteração de lagura */
+  padding: 1rem;
+}
+
+input#favorite-searchfocus {
+  -webkit-box-shadow: inset 5px 5px 37px -10px rgba(74, 128, 140, 0.7);
+  box-shadow: inset 5px 5px 37px -10px rgba(74, 128, 140, 0.7);
+
+  outline: 0;
+}
+
+/* BUTTON FAVORITER */
+button#favoriter {
+  background: var(--bkg-button-normal);
+
+  border: none;
+  border-radius: 0.8rem;
+
+  height: 4.6rem;
+  width: 17rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  transition: all 0.3s;
+}
+
+button#favoriter:hover {
+  background: var(--bkg-button-hover);
+  filter: brightness(2);
+}
+
+div.img-buttom {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+span#btn-favoriter {
+  color: var(--txt-buttom-normal);
+  font-family: "Roboto mono", monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+/* TABLE */
+table {
+  border: 1px solid var(--tbl-border);
+  border-radius: 1.2rem;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table * {
+  color: var(--txt-table);
+  font-family: "Inter", sans-serif;
+  font-size: 1.7rem;
+}
+
+table th {
+  background: var(--bkg-header-tbl);
+
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-style: normal;
+  padding: 1.5rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--tbl-border);
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--color-odd-line);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--color-even-line);
+}
+
+/* USER */
+table td {
+  padding: 1.5rem;
+  taxt-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user img {
+  height: 5rem;
+  width: 5rem;
+
+  object-fit: cover;
+  border-radius: 5rem;
+}
+
+p,
+span.username {
+  color: var(--txt-table);
+  line-height: 160%;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+span.username {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+/* REPOSITORIES AND FOLLOWERS */
+.repositories,
+.followers {
+  color: var(--txt-table);
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 160%;
+}
+
+/* ACTION */
+.remove {
+  background: none;
+  border: none;
+  color: var(--txt-button-remove);
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 160%;
+
+  text-transform: lowercase;
+
+  transition: all 0.3s;
+}
+
+.remove:hover {
+  color: white;
+
+  text-shadow: 0 0 5px var(--txt-button-remove),
+    0 0 8px var(--txt-button-remove), 0 0 8px var(--txt-button-remove),
+    0 0 20px var(--txt-button-remove), 0 0 30px var(--txt-button-remove),
+    0 0 40px var(--txt-button-remove), 0 0 55px var(--txt-button-remove),
+    0 0 75px var(--txt-button-remove), 11px 0px 6px rgba(206, 89, 55, 0);
+
+  transform: scale(1.2);
+}

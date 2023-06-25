@@ -1,0 +1,389 @@
+Visão geral desta etapa
+
+Anotações
+
+Nessa aula o Mayk mostrará uma visão geral de tudo que vai será aplicado dentro do Stage 04.
+
+Veremos sobre lógica e algoritmos utilizando a linguagem JavaScript, aplicaremos este módulo na metodologia Learn By Doing.
+
+======================================================
+
+Perguntando nome e mostrando mensagem
+
+Qual a função de uma variável? E como podemos declará-la?
+
+Executar ações. Esta ação pode ser a exibição de um texto na janela do navegador.
+
+Assim:
+
+alert("Olá, mundo!")
+
+======================================================
+
+Somar dois números
+
+Para que serve o operador typeof  no JavaScript? Serve para revelar o tipo de um dado.
+
+Exemplo:
+
+let numberOne = prompt("Digite o primeiro números")
+alert(typeof numberOne)
+
+======================================================
+
+Operações matemáticas
+
+Quais são os operadores matemáticos? Exemplifique cada um deles utilizando variáveis.
+
+Adição +
+Subtração -
+Multiplicação *
+Divisão /
+Resto da divisão %
+
+const sum = firstNumber + secondNumber
+const sub = firstNumber - secondNumber
+const mult = firstNumber * secondNumber
+const div = firstNumber / secondNumber
+const rest = firstNumber % secondNumber
+
+=======================================================
+
+Melhorando os Algoritmos e Lógica de programação
+
+Nessa aula reforçaremos o que é lógica de programação e algoritmos. Traremos dicas para você: Pensar, praticar, estruturar os dados e aprender a pensar olhando códigos de outros devs.
+
+---------
+
+* Lógica de programação
+
+* Entendendo problemas
+
+* Pensamento crítico e lógico
+
+++++++++++++
+
+1. PENSAR
+
+- é necessário tempo para pensar ;
+- para quem está começãodo este tempo é maior ;
+- é necessário evitar interrupções ;
+- para quem não treinou o foco, é muito fácil ser interrompido ;
+
++++++++++++++
+
+2. QUESTIONAR E ENTENDER
+
+- com as melhores perguntas, vem as melhores respostas ;
+- para entender o problema, precisamos continuar perguntando até encontrar a solução ;
+- para entender, precisamos aprender a ler e enterpretar o problema ;
+
+++++++++++++++
+
+3. PRATICAR
+
+- quanto mais praticar, melhor vai ficar ;
+- vai levar tempo! Por isso, será necessário paciência no processo ;
+- quebrar o problema em pequenos pedaços e colocar no código ;
+
+++++++++++++++
+
+4. ESTRUTURA DE DADOS E ALGORITMOS (conceitos teóricos)
+
+- algoritmos é a sequência de passos para complementar uma tarefa ;
+- é tudo sobre dados. Como manipular, guardar, exibir e capturar eles ;
+
+++++++++++++++
+
+5. VER CÓDIGO
+
+- você precisa ver código;
+- tentar entender o código dos outros ;
+- aprenderemos outras maneiras de pensar no problema ;
+- aprenderemos outros algoritmos ;
+- procurar explicar o que o código está fazendo ;
+- você vai encontrar código bom e código ruim ;
+
+=======================================================
+
+Calculando a média de um estudante
+
+O que é um tipo de dado Booleano? E qual o tipo de dado que ele aceita?
+
+É um tipo de dado que aceita somente dois valores.
+
+True (verdadeiro) ou false (falso).
+
+=======================================================
+
+Criando lista de compras
+
+O que significa o sinal ++ na programação?
+
+Incrementa a variável. Adiciona mai um ao seu valor.
+
+Assim:
+
+item = item + 1
+
+or
+
+item++
+
+=======================================================
+
+Jogo da adivinhação
+
+O que significa o tipo de dado NaN?
+
+Um dado que não é numérico.
+
+=======================================================
+
+Ganhando mais informações sobre a linguagem com ajuda do VS Code
+
+Nessa aula será apresentado uma funcionalidade do VS Code para dar mais clareza sobre as aplicações que estão sendo construídas e como o VS Code pode te ajudar daqui pra frente.
+
+=======================================================
+
+Interagindo com um menu de opções - parte 1
+
+O que faz o método .push em um array no JavaScript?
+
+Serve para adicionar dados.
+
+=======================================================
+
+Interagindo com um menu de opções - parte 2
+
+O que faz a instrução break na condicional Switch?
+
+=======================================================
+
+Estruturando dados com Objetos
+
+O que é um objeto no JavaScript?
+
+É uma representação de algo do mundo real. Este objeto possuí propriedades como: nome, idade, altura, etc..
+
+=======================================================
+
+Calculando IMC dos pacientes com Funções
+
+Crie uma função de exemplo que precise de argumentos e retorne algo.
+
+function printPatinetIMC(patient) {
+  return `
+  Paciente ${patient.name} possuí o IMC de ${(patient.weight / ((patient.height / 100) **2)).toFixed(2)} `
+}
+
+=======================================================
+
+Mais conceitos, revisão, finalização e próximos passos
+
+Anotações
+
+# O que aprendemos?
+
+Muita lógica e algoritmos
+
+- sintaxe e boas práticas
+    
+    ```jsx
+    // ponto e vírgula é facultativo
+    const myConst = "constante"
+    
+    // escrever com calmelCase
+    const myConst2 = "constante2"
+    
+    // procurar escrever código em inglês 
+    // para treinar, aumentar as oportunidades futuras
+    function doSomething(myArgument) {}
+    ```
+    
+- variáveis
+    
+    ```jsx
+    const
+    let
+    var
+    ```
+    
+- tipos de dados
+    
+    ```jsx
+    String 
+    Number
+    Boolean
+    undefined  
+    null
+    ```
+    
+- estrutura de dados
+    
+    ```jsx
+    // Array
+    const myArray = [1, 2, "a", "b", true]
+    
+    // Object
+    const myObject = { property: "value" }
+    ```
+    
+- funções
+    
+    ```jsx
+    // 1. Criação e tipos de funções
+    // named
+    function myFunction() {}
+    
+    // Anonymous
+    const myFunction = function() {}
+    
+    // Arrow
+    const myFunction = () => {}
+    
+    // arguments & return
+    function sum(a, b) {
+    	return a + b
+    }
+    
+    const sum = (a, b) => a + b
+    
+    // 2. Excecução
+    myFunction()
+    sum(1, 2)
+    ```
+    
+- fluxo da aplicação
+    
+    ```jsx
+    // if, else if, else
+    const isRainning = true
+    if (isRainning) {
+    	alert("Está chovendo, pega o guarda chuvas 🌧")
+    } else {
+    	alert("Dia limpo ⛅️")
+    }
+    
+    // switch
+    const water = "com gás"
+    
+    switch(water) {
+    	case "com gás": 
+    		alert("Essa água é com gás")
+    		break
+    	case "sem gás":
+    		alert("Essa água é sem gás")
+    		break
+    	case "da fonte":
+    		alert("Água fresquiha da fonte")
+    		break	
+    	default:
+    		alert("cadê minha água?")
+    }
+    ```
+    
+- estrutura de repetição
+    
+    ```jsx
+    // while
+    let play = true
+    while(play) {
+    	// fazer algo até o play ser falso
+    	// criar uma lógica para o play se tornar falso
+    	// se não, loop eterno
+    }
+    
+    // for (tradicional)
+    let text = "abc"
+    for (let i = 0; i < text.length; i++){
+    	alert(text[i])
+    }
+    
+    // for..of
+    for (let char of text) {
+    	alert(char)
+    }
+    ```
+    
+- operadores
+    
+    ```jsx
+    () // group operator - agrupamento
+    
+    // matemáticos
+    * // multiplicação
+    ** // exponeciação
+    / // divisão
+    % // resto da divisão
+    + // soma
+    - // subtração
+    
+    // lógicos
+    && // E lógico 
+    || // OU lógico
+    ! // Não lógico
+    
+    // comparação - relacional
+    > // maior
+    < // menor
+    >= // maior igual
+    <= // menor igual
+    == // igualdade
+    === // igual no valor e do mesmo tipo (estritamente igual)
+    != // desigualdade
+    !== // diferente do valor ou do tipo (estritamente diferente)
+    
+    // Atribuição
+    = // atribuição de valor
+    *= // multiplicação e atribuição de valor 
+    /= // divisão e atribuição de valor
+    += // soma e atribui valor
+    -= // diminui e atribui
+    
+    // outros operadores/expressões
+    
+    typeof // tipo do dado
+    ++ // incremento
+    -- // decremento
+    {} // objeto vazio ou bloco de código
+    [] // array vazio
+    , // separa elementos de um array, objeto ou criação de multiplas variáveis
+    ```
+    
+
+# Próximos passos
+
+Fazer os desafios e quizzes
+
+Revisar sempre que perceber que não entendeu algo, ou não conseguiu resolver o desafio, pois:
+
+1. Revisão é o caminho pra entender algo que ainda não foi compreendido
+2. Algumas vezes a resposta está em algo que já foi falado, mas passou desapercebido nas primeiras vezes
+
+Caso deseje saber mais JS, dê uma olhada nos conteúdos de JavaScript do Discover, pois lá você poderá aprender por **conceitos** *learn by concepts*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,174 @@
+Stage 10 - API Restful
+
+Neste módulo faremos a integração do back-end com o front-end da aplicação. O módulo será dividido em três partes, a primeira parte implementaremos a autenticação de usuários no back-end, na segundaetapa faremos o upload de imagens e na última parte faremos todas as funcionalidades para que a integração entre o front-end e back-end funcione corretamente.
+
+=====================================
+
+===========================
+= Autenticação do Usuário =
+===========================
+
+Abertura
+
+Fique a vontade para adicionar qualquer anotação.
+
+Neste módulo faremos a integração entre o back-end e o front-end da aplicação. O módulo será dividido em três partes, a primeira parte implementaremos a autenticação de usuários no back-end, na segunda etapa faremos o upload de imagens e na última parte faremos todas as funcionalidades para que a integração entre o front-end e back-end funcione corretamente.
+
+----------------
+
+Fluxo de autenticação
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula aprenderemos como funciona o fluxo de autenticação, o que são Middlewares e como evitar para que somente o usuário com o id específico consiga ter permissões necessárias de acesso ao sistema.
+
+--------------
+
+Rotas de autenticação
+
+Fique a vontade para adicionar qualquer anotação.
+
+--------------
+
+Validando usuário cadastrado
+
+Fique a vontade para adicionar qualquer anotação.
+
+--------------
+
+Validando Senha
+
+Fique a vontade para adicionar qualquer anotação.
+
+-------------
+
+JWT
+
+Fique a vontade para adicionar qualquer anotação.
+
+-------------
+
+Gerando Token do Usuário
+
+Fique a vontade para adicionar qualquer anotação.
+
+-------------
+
+Token no Insomnia
+
+Fique a vontade para adicionar qualquer anotação.
+
+------------
+
+Middleware de autenticação
+
+Fique a vontade para adicionar qualquer anotação.
+
+------------
+
+Utilizando Middleware
+
+Fique a vontade para adicionar qualquer anotação.
+
+=========================================
+================================
+======================
+
+
+
+
+=====================
+= Upload de Imagens =
+=====================
+
+Configurando Upload
+
+Fique a vontade para adicionar qualquer anotação.
+
+------------
+
+Disk Storage
+
+Fique a vontade para adicionar qualquer anotação.
+
+------------
+
+Carregando Imagens
+
+Fique a vontade para adicionar qualquer anotação.
+
+------------
+
+Salvando Imagem no Banco
+
+Fique a vontade para adicionar qualquer anotação.
+
+
+------------
+
+Servindo arquivos
+
+Fique a vontade para adicionar qualquer anotação.
+
+
+=====================================
+= Integração Front-end com Back-end =
+=====================================
+
+O que é API RESTful
+
+Fique a vontade para adicionar qualquer anotação.
+
+---------------
+
+Cors
+
+Fique a vontade para adicionar qualquer anotação.
+
+---------------
+
+Axios
+
+Fique a vontade para adicionar qualquer anotação.
+
+---------------
+
+Cadastro de Usuários
+
+Fique a vontade para adicionar qualquer anotação.
+
+---------------
+
+Contextos
+
+Fique a vontade para adicionar qualquer anotação.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,222 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  /* COLORS VARIABLES */
+  --color-one: #535971;
+  --color-two: #FF5374;
+  --color-three: #EFEFEF;
+  --color-four: #FFFFFF;
+  --color-five: #E6E6F0;
+  --color-six: #4E4958;
+  --color-seven:#FAFAFC;
+  --color-eight: #C1BCCC;
+  --color-nine: #050505;
+  --color-ten: #ff3b62;
+
+
+  /* FONT SIZE BASE */
+  font-size: 62.5%;
+}
+
+
+/* BODY */
+body {
+  background: var(--color-three);
+  letter-spacing: 0.1rem
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 43rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--color-one);
+}
+
+/* PAGE */
+.page {
+  width: 75rem;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  width: 41rem;
+  margin-bottom: 6rem;
+}
+
+/* TITLE AND DESCRIPTION */
+h1 {
+  font-family: 'Staatliches', cursive;
+  color: var(--color-four);
+  font-size: 4.8rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  line-height: 6rem;
+  padding-top: 14rem;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+  line-height: 3rem;
+  font-size: 2rem;
+  color: var(--color-four);
+  padding-top: 1.8rem;
+}
+
+/* FORM */
+form {
+  background: var(--color-four);
+  border-radius: 2rem 2rem 0 0 ;
+  min-height: 30rem;
+
+  padding: 6.4rem;
+}
+
+/* FIELDSETS */
+fieldset {
+  border: none;
+  margin-bottom: 3rem;
+}
+
+/* LEGENDS */
+fieldset legend {
+  color: var(--color-one);
+  font-family: 'Staatliches', cursive;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+
+  border-bottom: 0.1rem solid var(--color-five);
+  width: 100%;
+  padding-bottom: 1.6rem;
+}
+
+/* WRAPPER */
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER TWO */
+h2 {
+  color: var(--color-one);
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 3.4rem;
+  margin-top: 3.2rem;
+}
+
+/* LABELS AND INPUTS */
+div.col-2 {
+  display: flex;
+  gap: 2.2rem;
+
+  margin-top: 3.6rem;
+}
+
+div.col-3 {
+  display: flex;
+  gap: 1rem;
+}
+
+input#date {
+  margin-right: 3.2rem;
+}
+
+input.width-fields {
+  width: 14rem;
+}
+
+label {
+  color: var(--color-six);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin: 1.6rem 0 0.8rem;
+}
+
+input {
+  background: var(--color-seven);
+  border: 0.1rem solid var(--color-five);
+  border-radius: 0.8rem;
+  height: 5.6rem;
+  width: 30rem;
+  
+  color: var(--color-nine);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding: 2rem;
+
+}
+
+fieldset input.all-width {
+  width: 100%;
+}
+
+/* SPANS */
+span {
+  color: var(--color-eight);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 2rem;
+
+  transition: 0.5s ease-in-out;
+}
+
+span:hover {
+  color: var(--color-six);
+}
+
+/* FOOTER */
+footer {
+  background: var(--color-one);
+  border-radius: 0 0 0.8rem 0.8rem;
+  height: 16rem;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 5.2rem 7.1rem;
+
+  margin: 0 0 10rem 0;
+}
+
+footer button.button-save {
+  background: var(--color-two);
+  border-radius: 2rem;
+  color: var(--color-four);
+  text-transform: uppercase;
+  font-family: 'Staatliches', cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.6rem;
+  cursor: pointer;
+  
+  border: none;
+  height: 5.6rem;
+  width: 60rem;
+
+  transition: 0.5s ease-in-out;
+}
+
+footer button.button-save:hover {
+  background: var(--color-ten);
+}

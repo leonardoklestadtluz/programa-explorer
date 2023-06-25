@@ -1,0 +1,519 @@
+Stage 09 - Introdução
+
+Neste módulo será apresentado o ReactJS e construiremos o nosso freont-end do projeto RocketNotes. Além disso, aprenderemos a utilizar o Vite, estruturar arquivos e pastas, estilizar o projeto utilizando styled-components, navegação com React Router e muito mais.
+
+===========================================
+
+INTRODUÇÃO
+
+Abertura
+
+Neste módulo aprenderemos a desenvolver aplicações Web utilizando ReactJS.
+
+----------------
+
+Apresentando o Projeto
+
+Figma do Projeto RocketNotes (https://app.rocketseat.com.br/node/stage-09/group/introducao-12/lesson/apresentando-o-projeto-3#:~:text=Figma%20do%20Projeto%20RocketNotes)
+
+----------------
+
+O que é ReactJS?
+
+É uma biblioteca Javascript focada na criação de interfaces para usuários. Embora também seja chamado de framework.
+
+Obs: frameworks impoem regras para sua utilização, como: estruturação de pastas, nomes , entre outros. As bibliotecas sugerem algumas configurações, mas podemos por exemplo, organizar as pastas de acordo com nosso projeto.
+
+----------------
+
+Vite
+
+Fique a vontade para adicionar qualquer anotação.
+
+É um setup pronto, ou seja, ele traz todas as configurações necessárias para não precisarmos configurarmos do zero.
+
+----------------
+
+Criando um projeto
+
+Qual o comando que utilizamos para criar um projeto React com Vite?
+
+npm create vite rocketnotes --template react
+
+----------------
+
+Estrutura de pastas e arquivos
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula aprenderemos a sobre a estrutura de pastas e arquivos dentro de um projeto ReactJS.
+
+-----------------
+
+Executando o projeto
+
+Qual o comando para executar um projeto React?
+
+npm run dev
+
+-----------------
+
+Funcionamento do ReactJS
+
+Fique a vontade para adicionar qualquer anotação.
+
+React recarrega somente o que é necessário. Isso faz com que a página não seja reacarregada, somente seu conteúdo é atualizado.
+
+-----------------
+
+JSX
+
+Qual a diferença entre um arquivo .js e o um arquivo .jsx ?
+
+.js = escrevemos o código em um arquivo separado do HTML;
+.jsx = permite escrever código HTML dentro de arquivo Javascript;
+
+------------------
+
+Fragment
+
+O que é Fragment?
+
+É uma espécie de empacotador de elementos do React. Usado quando 
+precisamos ter vários elementos dentro de um retorno.
+
+Ele empacota estes elementos e assim o retorno fica somente com
+um único elemento.
+
+Assim: 
+
+export function Details() {
+  return (
+    <>
+    <h1>Hello World!</h1>
+    <span>Leonardo K. Luz</span>
+    </>
+  )
+}
+
+-----------------
+
+Adicionando CSS
+
+Por que é melhor estruturar o CSS em pastas separadas?
+
+Para mellhorar a organização e facilitar a manutenção do código.
+
+-----------------
+
+Tema
+
+Por que é importante definirmos tokens de temas para o nosso projeto?
+
+Facilita a manutenção e ajuda a manter consistência do design da plicação.
+
+Exemplo de um Tema
+
+export default {
+  COLORS: {
+    BACKGROUND_900: "#232129",
+    BACKGROUND_800: "#312E38",
+    BACKGROUND_700: "#3E3B47",
+
+    WHITE: "#F4EDE8",
+    ORANGE: "#FF9000",
+
+    GRAY_100: "#999591",
+    GRAY_300: "#666360",
+
+    RED: "#FF002E"
+  }
+}
+
+-----------------
+
+Estilo Global
+
+Por que é tão importante adicionarmos um estilo global em nosso projeto?
+
+Novamente, para facilitar a manutenção e organizarmos os estilios dos componentes, pois o estilo de background de um botão não será aplicado na página inteira.
+
+Então estilos que são de uso comum entre a página e os componentes e elementos ficam no arquivo de estilo global onde é aplicado na página e nos componentes.
+
+----------------
+
+Arrow Function
+
+Fique a vontade para adicionar qualquer informação.
+
+Uma expressão arrow function possui uma sintaxe mais curta quando comparada a uma expressão de função (function expression) e não tem seu próprio this, arguments, super ou new.target. Estas expressões de funções são melhor aplicadas para funções que não sejam métodos, e elas não podem ser usadas como construtoras (constructors).
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+Comparação entre função convencional e uma arrow function
+
+Função convencional
+
+function sum(a, b) {
+	return a + b
+}
+
+const result = sum(7, 3)
+
+Funções convencionais, também chamadas de funções simples, precisam ser invocadas (chamadas), para serem executadas.
+
+
+
+
+
+Arrow function
+
+const result (7, 3) => {
+	return a + b
+}
+
+Arrow functions são executadas automaticamente, ou seja, sem a necessidade de ser invocadas (chamadas).
+
+----------------
+
+Fontes Personalizadas
+
+Fique a vontade para adiconar qualquer anotação.
+
+Nessa aula aprenderemos como adicionar fontes personalizadas em nosso projeto utilizando o Google Fonts.
+
+---------------
+
+
+Componente
+
+Fique a vontade para adicionar qualquer informação.
+
+Nessa aula aprenderemos o que é componentes no ReactJS e criaremos o nosso primeiro componente, o button.
+
+Exemplo:
+
+import { Container } from "./styles";
+
+export function Button() {
+
+    return (
+        <Container type="button">
+            Meu Botão
+        </Container>
+    )
+}
+
+---------------
+
+Propriedade
+
+O que são propriedades nos componentes ReactJS?
+
+OBS: se o tipo da propriedade for texto, informamos seu valor assim: title="VALOR_DA_PROPRIEDADE", caso seja do tipo numérico, informamos assim: title={10}
+
+São as características que cada componente tem. Pro exemplo: o nome de cada botão pode ser diferente.
+
+Com as propriedades, podemos deixá-las flexíveis. Na tag do componente informammos uma propriedade title para cada componente, cada propriedade com seu nome.
+
+Assim:
+
+import {Container} from './styles'
+
+import { Button } from '../../components/Button'
+
+export function Details() {
+  return (
+    <Container>
+      <h1>Hello World!</h1>
+      <span>Leonardo K. Luz</span>
+
+      <Button title="Entrar" />
+      <Button title="Cadastrar" />
+      <Button title="Voltar" />
+    </Container>
+  )
+}
+
+
+
+E no componente, recuperamos o valor das propriedade passando props como argumento do componente e dentro do componente informamos props.title entre {}. Ou desestruturar, removendo o argumento props.
+
+Assim:
+
+/* eslint-disable react/prop-types */
+import { Container } from "./styles";
+
+export function Button({ title }) {
+
+    return (
+        <Container type="button">
+            {title}
+        </Container>
+    )
+}
+
+====================================================
+==========================================
+
+
+Stage 09 - Desenvolvendo Aplicação
+
+Componente Header
+
+Fique a vontade para adicionar qualquer anotação.
+
+
+-----------------
+
+Imagem do usuário
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula continuaremos a estilização do nosso componente Header e também adicionaremos a imagem do usuário no cabeçalho da página.
+
+-----------------
+
+Ícones
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula aprenderemos a utilizar lib `react-icons` em nosso projeto.
+
+[React Icons](https://react-icons.github.io/react-icons/)
+
+-----------------
+
+Children
+
+O que faz a propriedade children no ReactJS?
+
+A propriedade children é uma propriedade especial em componentes React que contém os elementos filhos de um componente. Ela é usada para compor componentes e permitir que eles aceitem conteúdo arbitrário.
+
+-----------------
+
+Componente Tag
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos o componente *<Tag />* utilizando a mesma técnica da aula anterior para exibir os marcadores em nosso projeto.
+
+----------------
+
+Componente ButtonText
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos o componente *<ButtonText />* para reutilizá-lo em outras páginas do nosso projeto.
+
+---------------
+
+Finalizando Detalhes
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula finalizaremos a página de detalhes do projeto adicionando botões e alguns outros elementos.
+
+---------------
+
+Aplicando Grid na Home
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula daremos início a página Home utilizando display: grid
+
+---------------
+
+Logotipo
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos a estilização do logotipo do projeto seguindo o layout do Figma.
+
+---------------
+
+Filtros
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos o menu de filtros do projeto destacando a em laranja a tag que estiver selecionada.
+
+---------------
+
+Botão Criar Nota
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos o botão Criar Nota utilizando react-icons.
+
+---------------
+
+Input
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos o componente <Input/> adicionando os respectivos ícones onde for necessário.
+
+--------------
+
+Componente de Notas
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos o Componente Notas e finalizaremos a página Home.
+
+--------------
+
+Estrutura SignIn
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula começaremos a montar a estrutura de Login do projeto.
+
+--------------
+
+Formulário SignIn
+
+Fique a vontade para adicionar qualquer anotação.
+
+essa aula faremos o formulário de login utilizando o pacote de ícones React Icons e estilizaremos com styled-components
+
+--------------
+
+Utilizando Imagens
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula adicionaremos o background na página de login do nosso projeto.
+
+Link para download da imagem:
+
+[Clique aqui para fazer o download da imagem](https://storage.googleapis.com/golden-wind/explorer/description-assets/nivel-09/background.png)
+
+---------------
+
+Importação de Imagens
+
+Fique a vontade para adicionar qualquer anotação.
+
+Criamos um variável userImg passando seu caminho: '../../assets/leonardo.png'
+
+Após, passamos essa variável para a tag img, na sua propriedade src={userImg}
+
+Assim:
+
+import userImg from '../../assets/leonardo.png'
+
+<img
+  src={userImg}
+  alt="Foto do usuário"
+/>
+
+
+ou podemos fazer a mesma coisa no CSS usando styled-componets.
+
+Criamos um variável backgroundImg passando seu caminho: '../../assets/background.png'
+
+Então essa variável é passada para a div Background na sua propriedade background-image: url(${backgroundImg});
+
+Assim:
+
+import backgroundImg from '../../assets/background.png'
+
+export const Background = styled.div`
+    flex: 1;
+    background-image: url(${backgroundImg});
+    background-size: cover;
+`
+
+---------------
+
+SignUp
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula reaproveitaremos a página de Login (SignIn) para desenvolveremos a página de Cadastrar (SignUp).
+
+---------------
+
+Profile
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos a página de perfil do nosso projeto contendo a foto e formulários para cadastrar nome, e-mail e senha.
+
+---------------
+
+Avatar do usuário
+
+Fique a vontada para adicionar qualquer anotação.
+
+Nessa aula faremos o componente de Avatar do usuário e o botão de upload de imagem para futuramente conseguirmos substituir o avatar.
+
+---------------
+
+Interface New 
+
+Fique a vontade para adicionar qualquer informação.
+
+Nessa aula faremos a estrutura para cadastrar novas notas em nosso projeto.
+
+---------------
+
+Header da New
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos o componente Header para ser exibido ao cadastrarmos novas notas.
+
+---------------
+
+TextArea
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos um novo componente do tipo TextArea para que o usuário consiga escrever várias linhas ao adicionar uma nova nota.
+
+----------------
+
+Componente NoteItem
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos um novo componente chamado NoteItem com a propriedade `readonly`
+
+Propriedade readOnly = permite somente a leitura do item, neste caso, um link que já foi adicionado poderá somente ser lido.
+
+----------------
+
+Estilizando o NoteItem
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula faremos a estilização do componente criado na aula anterior, o NoteItem.
+
+-----------------
+
+Finalizando o New
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula finalizaremos a página de criar nova nota adicionando as tags e o botão de salvar na interface.
+
+---------------
+
+Rotas
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula utilizaremos a lib chamada React Router para fazermos as navegações funcionarem corretamente dentro do projeto.
+
+[React Router: Declarative Routing for React](https://v5.reactrouter.com/web/guides/quick-start)
+
+----------------
+
+Navegação
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nessa aula configuraremos as rotas para que a navegação funcione corretamente.

@@ -1,0 +1,13 @@
+/* COLORS AND FONTS */
+:root {
+  /* COLORS */
+  --color-one: #4A4E69;
+  --color-two: #8E9AAF;
+  --color-three: #CBC0D3;
+  --color-four: #FEEAFA;
+  --color-five: #EFF1FF;
+  --color-six: rgba(0, 0, 0, 0.25);
+
+  /* FONTS */
+  font-size: 62.5%;
+}

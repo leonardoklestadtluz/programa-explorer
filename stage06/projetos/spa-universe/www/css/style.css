@@ -1,0 +1,195 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES AND BASE FONT */
+:root {
+  --bg: url(../assets/bg01.png);
+  
+  --colorOne: #c4c4cc;
+  --colorTwo: #e1e1e6;
+  --colorThree: #ffffff;
+  --colorFour: #7bdef0;
+  
+  font-size: 62.5%;
+}
+
+/* BODY */
+body {
+  background: center/cover no-repeat;
+  background-image: var(--bg);
+
+  height: 90vh;
+}
+
+/* HEADER */
+header {
+  margin: 4rem 7.2rem 4rem;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+/* MENU */
+nav {
+
+  display: flex;
+  gap: 3rem;
+}
+
+.menu {
+  background: none;
+  break-word: none;
+  color: var(--colorOne);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  text-decoration: none;
+  
+  transition: all 0.5s;
+}
+
+.menu:hover {
+  color: var(--colorThree);
+  font-weight: 700;
+  transform: scale(1.1);
+
+}
+
+/* MAIN */
+main {
+  margin-top: 17.2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+section#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+section.text-left {
+  text-align: left;
+}
+
+h1 {
+  color: var(--colorThree);
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+p {
+  color: var(--colorTwo);
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+
+  margin: 1.6rem 0 0 0;
+  
+  height: 20.3rem;
+  width: 64.8rem;
+}
+
+/* BUTTON */
+button {
+  background: none;
+  border: 2px solid var(--colorThree);
+  border-radius: 1.3rem;
+
+  color: var(--colorThree);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  height: 4.8rem;
+  width: 19.5rem;
+
+  transition: 500ms;
+
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid var(--colorFour);
+  box-shadow: 1px 1px 15px var(--colorThree);
+}
+
+a#text-button {
+  color: var(--colorFour);
+  text-decoration: none;
+  transition: 500ms;
+}
+
+a#text-button:hover {
+  color: var(--colorThree);
+}
+
+/* ERROR PAGE */
+h2 {
+  color: var(--colorTwo);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+
+  margin-top: 1.6rem 0 0 0;
+
+  height: 5.8rem;
+  width: 44rem;
+}
+
+span {
+  color: var(--colorTwo);
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 125%;
+
+  margin-bottom: 3.4rem;
+}
+
+footer {
+  background: none;
+
+  color: var(--colorThree);
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;  
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 0.4rem;
+
+  transition: all 500ms;
+}
+
+footer:hover {
+  transform: scale(1.1);
+}

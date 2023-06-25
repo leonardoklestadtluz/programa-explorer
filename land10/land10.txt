@@ -1,0 +1,161 @@
+Land 10 - Emprego
+
+Aqui o objetivo é compartilhar dicas que você pode usar para se sair bme nos processos seletivos! Bora detonar nas entrevistas?
+
+=========================================
+
+Júnior, Pleno e Sênior
+
+Fique a vontade para adicionar qualquer anotação.
+
+Júnior
+
+    * Tarefas com complexidade menor e normalmente sem autonomia para tomada de decisões.
+
+    * É aqui que começa a carreira profissional.
+
+    * Irá contar com a ajuda de profissionais mais experientes.
+
+----
+
+Pleno
+
+    * Executa tarefas mais complexas e tem um poder de decisão limitado, já que a palavra final é do seu superior.
+
+    * Sabe encontrar respostas e caminhos para solucionar os desafios do dia a dia.
+
+----
+
+Sênior
+
+    * Possuí calma e paciência para lidar com problemas. Possuí visão estratégica da aplicação. Tem postura e maturidade para liderar projetos e equipes. Possuí autonômia para tomar decisões.
+
+    * É um prfissional experiênte e possuí um alto nível de responsabilidade.
+
+--------------------
+
+Aplicando para a primeira vaga
+
+Fique a vontade para adicionar qualquer anotação
+
+Quando começar a se aplicar para vagas de dev júnior?
+
+Analisando uma vaga real, vamos aprender a diferenciar o que é desejável do que é requerido para se candidatar.
+
+Não importa quantos não você ganha. Você só precisa de um sim.
+
+
+------------------
+
+Construindo networking
+
+Fique a vontade para adicionar qualquer anotação
+
+Longe de uma relação de interesse, networking é AGREGAR VALOR PARA O OUTRO, é comunidade. É praticar sua generosidade e se permitir a ganhar ajuda.
+
+Ser ativo na comunidade, participar de eventos e fazer amizades são canais para a evolução pessoal e profissional que te levam para o próximo nível!
+
+---------------
+
+Se prepare para a entrevista
+
+Fique a vontade para adicionar qualquer anotação
+
+Não dá para cair de pára-quedas na entrevista de emprego, né?
+
+É importante se preparar e aprender com os requisitos da vaga, preparar o ambiente, se organizar e conhecer a empresa! Assim, você diminuirá imprevistos e também reduzirá a ansiedade natural que esse momento pode trazer.
+
+------------------
+
+Sua apresentação
+
+Fique a vontade para adicionar qualquer anotação
+
+Essa é uma etapa que acontece em todas as entrevistas. Você vai precisar se apresentar.
+
+Então, que tal preparar antes uma apresentação pessoal matadora para você treinar e se sentir mais confortável quando o momento chegar?
+
+------------
+
+Hack de entrevista
+
+Fique a vontade para adicionar qualquer anotação
+
+[Clique aqui para acessar o material](https://axiomatic-basin-551.notion.site/Hack-de-entrevista-1a5b21e3f533427cbb907d3ed4e22807)
+
+Com esse material, você vai poder estudar e treinar as perguntas mais comuns nas entrevistas para dev júnior. Você pode estudar cada uma delas e treinar como responderá.
+
+Dica: abra o link e clique em “duplicate” irá criar uma cópia editável no seu Notion pessoal. 💜
+
+----------------
+
+Ética na entrevista
+
+Fique a vontade para adicionar qualquer anotação
+
+Uma postura ética faz toda a diferença na entrevista e o entrevistador estará atendo às respostas que podem ou não revelar sua maturidade e profissionalismo nesse sentido.
+
+------------
+
+Estrutura de um processo seletivo
+
+Fique a vontade para adicionar qualquer anotação
+
+Quais são as etapas de um processo seletivo para área técnica? Apesar de sofrer algumas variações, os processos geralmente contam com as seguintes fases. Vamos entender o que acontece em cada uma delas?
+
+[Estrutura do processo seletivo](https://storage.googleapis.com/golden-wind/explorer/description-assets/nivel-10/land-10/estrutura-processo-seletivo.png)
+
+--------------
+
+Testes técnicos
+
+Fique a vontade para adicionar qualquer anotação
+
+Vagas técnicas geralmente incluem uma etapa de teste técnico sobre uma determinada ferramenta ou área. Longe de ser um bicho de sete cabeças, essa etapa também serve para auto-avaliação e evolução profissional!
+
+Lembre-se: testes técnicos não são só sobre capacidade técnica, mas também sobre resolução de problemas e comunicação!
+
+---------------
+
+Dicas para testes técnicos
+
+A etapa de teste técnico demanda organização e capacidade de priorizar as entregas. Nessa aula, trazemos quatro dicas muito importantes sobre o assunto que vão mudar o jogo e trazer mais tranquilidade nessa fase.
+
+Lembre-se: você não está em uma prova da faculdade. É importante perguntar, tirar dúvidas e garantir que você tem todas as informações necessárias para desenvolver com calma e tranquilidade.
+
+------------
+
+Encontrando oportunidades
+
+Fique a vontade para adicionar qualquer anotação
+
+Existem várias formas de encontrar vagas dev. No Linkedin, você pode procurar por tecnologia e utilizar os filtros da plataforma para selecionar o nível de especialização, localização, tamanho da empresa e muito mais! Você também pode ficar de olho na comunidade da Rocketseat no Discord, pois sempre tem vagas novas por lá.
+
+Além dessas opções, você pode fazer uma lista das empresas onde quer trabalhar e verificar periodicamente as posições que abrem no site institucional de cada uma delas.
+
+-------------
+
+Feedback
+
+Fique a vontade para adicionar qualquer anotação
+
+A entrevista leva a dois caminhos: ou à aprovação e contratação, ou à negativa. No caso da negativa, o importante é não desanimar. Continue a nadar!
+
+Tente colher feedback da empresa para entender onde você falhou e o que você pode fazer para melhorar nas próximas oportunidades.
+
+O feedback é essencial para você evoluir na direção certa, criar maturidade e aprimorar suas habilidades profissionais. O não também é uma oportunidade de crescimento e você estará muito mais perto da sua vaga dev após esse exercício.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

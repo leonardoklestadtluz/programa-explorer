@@ -1,0 +1,205 @@
+/* RESET OF ELEMENTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+  
+  /* Colors variables */
+  --colorOne: #F03E3E;
+  --colorTwo: #040924;
+  --colorThree: #FFFFFF;
+  --colorFour: #0C3440;
+  --colorFive: #DCE2E9;
+  --colorSix: #040924;
+  --colorEight: rgba(242, 237, 237, 0.827);
+  --colorNine:  rgba(73, 80, 87, 0.5);
+  --colorTen: #02799D;
+  --colorEleven: #015e7b;
+  --colorTwenty: #040924bc;
+  
+  /* text size default */
+  font-size: 62.5%;
+}
+
+/* BODY */
+body {
+  background: var(--colorTwo);
+}
+
+body, button, input {
+  font-family: 'DynaPuff', cursive;
+  line-height: 2rem;
+  font-size: 1.6rem;
+}
+
+/* ALERT ERROR */
+.alert-error.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.alert-error {
+  background:  var(--colorOne);
+  color: var(--colorThree);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  padding: .8rem 0;
+
+  letter-spacing: .2rem;
+  font-weight: 400;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-30px);
+  transition: transform .5s;
+
+}
+
+/* CONTAINER */
+.container {
+  height: 100vh;
+  padding: 1.6rem;
+
+  display: grid;
+  place-content: center;
+}
+
+/* CARD */
+.card {
+  background: var(--colorThree);
+  border-radius: .6rem;
+  box-shadow: 0 .2rem .4rem var(--colorEight);
+  padding: 2.8rem 4.4rem 4.4rem;
+  max-width: 42.8rem;
+  margin-inline: auto;
+}
+
+/* TITLE */
+.title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: var(--colorFour);
+  text-align: center;
+}
+
+/* FORM */
+form {
+  width: clamp(15rem, 30vw, 30rem);
+}
+
+form h1 {
+  margin-bottom: 3.2rem;
+}
+
+form label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--colorFour);
+  margin: 1.6rem 0 .8rem 0; 
+  display:block
+}
+
+form input {
+  background: var(--colorFive);
+  border: 1px solid var(--colorTen);
+  border-radius: .4rem;
+  padding: 1.6rem;
+  width: 100%
+}
+
+/* INPUT WRAPPER */
+form input:focus {
+  outline: 2px solid var(--colorTen);
+}
+.input-wrapper + .input-wrapper { 
+  margin-top: 1.6rem;
+}
+
+form input::placeholder {
+  color: var(--colorSix);
+}
+
+/* BUTTON */
+form button {
+  margin-top: 3.2rem;
+  padding: 1.6rem;
+  width: 100%;
+
+  border-radius: .4rem;
+  border: none;
+  background-color: var(--colorTen);
+  color: var(--colorThree);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+  font-weight: 400;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: background .4s;
+}
+
+form button:hover {
+  background: var(--colorEleven);
+}
+
+/* MODAL */
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-wrapper {
+  position: absolute;
+  inset: 0;
+  background: var(--colorTwenty);
+
+  display: grid;
+  place-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-title {
+  color: var(--colorFour);
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal {
+  position: relative;
+}
+
+/* BUTTON MODAL */
+.modal button {
+  background: none;
+  border: none;
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  cursor: pointer;
+
+  transition: transform .3s;
+}
+
+.modal button:hover {
+  transform: scale(1.3);
+}

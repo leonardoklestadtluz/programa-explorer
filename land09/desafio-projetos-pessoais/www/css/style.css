@@ -1,0 +1,245 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Oxygen Mono', monospace; */
+
+/* RESET STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+a {
+  text-decoration: none;
+}
+
+/* BASE COLORS AND FONT */
+:root {
+  /* Colors */
+  --bkg-page: linear-gradient(
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.698),
+    rgba(0, 0, 0, 1)
+  );
+  --bkg-container: radial-gradient(
+    to left,
+    rgba(16, 1, 60, 0.294),
+    rgb(16, 1, 60),
+    rgb(16, 1, 60)
+  );
+  --bkg-reset-password: #fff;
+  --bkg-enter: #0f00daff;
+
+  --filter-aside: #000000a6;
+
+  --title: rgba(69, 154, 211, 0.63);
+
+  --txt-slogan: #ffffff;
+  --txt-form: #ffffffff;
+  --txt-placeholder: #696969;
+  --txt-reset-password: #ffffff6c;
+  --txt-buttom-enter: #fff;
+
+  /* Font base */
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--bkg-page);
+}
+
+/* CONTAINER */
+.container {
+  background-image: linear-gradient(#160e38ff, #16368f, #095a42);
+  border-radius: 1rem;
+
+  width: 96rem;
+  height: 50rem;
+  margin: 19rem auto;
+
+  display: flex;
+}
+
+/* LEFT SIDE */
+aside img#logo {
+  height: 10rem;
+  width: 10rem;
+
+  position: relative;
+  left: 17.5rem;
+  bottom: 53.5rem;
+
+  z-index: 1;
+}
+
+div#filter,
+img#bkg-aside {
+  border-radius: 1rem 0 0 1rem;
+
+  height: 50rem;
+  width: 29rem;
+}
+
+div#filter {
+  background: var(--filter-aside);
+
+  position: absolute;
+  top: 19rem;
+}
+
+p#slogan {
+  color: var(--txt-slogan);
+
+  font-family: "Oxygen Mono", monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+
+  height: 5rem;
+  width: 16rem;
+
+  position: relative;
+  left: 12rem;
+  bottom: 9rem;
+
+  z-index: 1;
+}
+
+/* RIGTH SIDE */
+main {
+  letter-spacing: 0.2rem;
+  margin: 5.5rem auto;
+}
+
+/* FORM */
+h1 {
+  color: var(--title);
+  margin-bottom: 3rem;
+
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weigth: 500;
+  line-higth: 4.4rem;
+  letter-spacing: 0.3rem;
+
+  transition: all 0.5s;
+}
+
+h1:hover {
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input {
+  color: var(--txt-form);
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-heigth: 2.4rem;
+
+  margin-bottom: 0.8rem;
+}
+
+input.fields {
+  border-radius: 2rem 0.5rem 2rem 0.5rem;
+  box-shadow: 0;
+  outline: 0;
+
+  color: var(--txt-placeholder);
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+
+  margin-bottom: 3rem;
+  padding: 1rem 1.2rem 1rem;
+
+  height: 3.9rem;
+  width: 39.8rem;
+}
+
+.rememberme {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#label-rememberMe {
+  color: var(--txt-form);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-heigth: 1.9rem;
+}
+
+#input-rememberMe {
+  height: 2rem;
+  width: 2rem;
+}
+
+.buttons {
+  margin: 5rem 0 14rem 0;
+
+  display: flex;
+  align-items: center;
+  /* gap: 6.8rem; */
+
+  justify-content: space-between;
+}
+
+#reset-password {
+  border-radius: 0.5rem 2rem 0.5rem 2rem;
+
+  color: var(--txt-reset-password);
+  cursor: pointer;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-height: 2rem;
+
+  padding: 1.5rem;
+
+  transition: 0.5s;
+}
+
+#reset-password:hover {
+  box-shadow: inset 0px 0px 10px 3px white;
+  color: var(--bkg-reset-password);
+}
+
+button {
+  background: var(--bkg-enter);
+  border: none;
+  border-radius: 0.5rem 2rem 0.5rem 2rem;
+  color: var(--txt-buttom-enter);
+
+  cursor: pointer;
+
+  font-family: "Oxygen Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+
+  width: 16rem;
+  height: 4.6rem;
+
+  text-transform: uppercase;
+
+  transition: 0.5s;
+}
+
+button:hover {
+  background: none;
+  box-shadow: inset 0px 0px 10px 3px white;
+  transition: 0.5s;
+
+}

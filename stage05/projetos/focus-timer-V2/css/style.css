@@ -1,0 +1,91 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* VARIABLES */
+:root {
+  /* Colors */
+  --color-one: #323238;
+  --color-two: #E1E1E6;
+  --color-three: #02799D;
+  --color-four: #FFFFFF;
+  --color-five: hsla(240, 6%, 21%, 0.337);
+
+  /* Font */
+  font-size: 62.5%;
+}
+
+/* SECTION CONTENT */
+section.content {
+  /*background: rgba(0, 0, 0, 0.504); /* APAGAR! somente para orientação */
+
+  margin: 19.2rem auto;
+  width: clamp(40rem, 55vw, 83rem);
+
+  display: flex;
+  align-items: center;
+  gap: 16.2rem;
+}
+
+/* LEFT SIDE */
+#left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+/* Timer */
+#timer {
+  color: var(--color-one);
+  font-family: 'Mouse Memoirs', sans-serif;
+  
+  font-weight: 400;
+  line-height: 14.8rem;
+  
+  display: flex;
+  
+  font-size: clamp(2rem, 6rem + 6vw, 12.6rem);
+}
+
+span {
+  font-size: 16.6rem;
+  margin: 0 auto;
+}
+
+/* BUTTONS CONTROLS */
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 3.8rem;
+}
+
+.size-controls svg {
+  width: clamp(2rem, 2.5rem + 4vw, 4.8rem);
+}
+
+.disable {
+  background: var(--color-five);
+}
+
+/* RIGHT SIDE */
+#right-side {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 3.2rem;
+}
+
+/* SOUND ACTIONS */
+.sound-action svg {
+  width: clamp(2rem, 1.5rem + 6vw, 13.8rem);
+}

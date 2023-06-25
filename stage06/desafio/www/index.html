@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- PRECONNECT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT STYLE -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- TITLE -->
+  <title>{⭐} GitFav</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <a href="index.html">
+        <img src="./assets/logo.svg" alt="Imagem da logomarca">
+      </a>
+
+      <div class="search">
+        <label for="favorite-github" class="sr-only">Github Favorito</label>
+        <input type="text" id="favorite-search" placeholder="Pesquise seu Github favorito"
+          title="Informe o nome do seu usuário favorito no Github">
+
+        <button id="favoriter">
+          <img id="img-buttom" src="./assets/star-buttom.svg" alt="Imagem da estrela de dentro do botão">
+
+          <span id="btn-favoriter">Favoritar</span>
+        </button>
+      </div>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Usuário</th>
+          <th>Repositórios</th>
+          <th>Seguidores</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+
+    </table>
+  </div>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

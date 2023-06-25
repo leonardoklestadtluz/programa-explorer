@@ -1,0 +1,263 @@
+Qual a diferença de Texto para Hypertexto?
+
+**Texto →** São frases, letras, números e caracteres contidos em uma página web. Não são clicáveis e as vezes não é possível nem selecioná-los para copiar.
+
+**Hypertexto →** Também são frases, letras, números e caracteres contidos em uma página web, porém quando clicados direcionam o usuário para outra página ou sessão do mesmo site, ou para um site externo.
+
+=================================================
+
+O que é especificidade no CSS?
+
+É a hierarquia de seleção dos elementos **HTML** no **CSS**. Conforme o elemento selecionado sua força pode sobrepor outros estilos e consequentemente forçar uma estilização. Quanto mais específica **(interna)** a seleção, mais força o seletor tem.
+
+**Exemplo de seletores:**
+
+- Seletores Universais
+- Tipo de Seletores
+- Classes seletoras
+- Atributos Seletores
+- Pseudo-classes
+- Seletores ID
+- Estilo Inline
+
+===============================================
+
+O que é Figma?
+
+É uma plataforma web e também um software que permite desenharmos telas  de sites, sistemas e aplicativos (Wireframes). Também permite criarmos protótipos navegáveis a partir do wireframe.
+
+Possuí sua versão gratuita e paga, mas a versão gratuita não deixa a desejar. Seu uso é intuitivo e mesmo estando no idioma inglês o usuário consegue utiliza-la facilmente.
+
+===============================================
+
+O que significa essa tag?
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Refere-se a toda a área visível conforme o tamanho da tela do dispositivo. E informa que o conteúdo irá ajustar-se à largura da tela do dispositivo na escala inicial de 1.0 .
+
+================================================
+
+O que é SVG?
+
+Scalable Vector Grafhics (gráficos vetoriais escaláveis): é um arquivo XML com tags específicas. A partir destas tags é possível gerar imagens vetorizadas.
+
+Este tipo de imagem é ótimo para a web porque sua qualidade não é afetada em nenhum momento quando redimensionada.
+
+================================================
+
+Quais são os 2 tipos de especificação de como os elementos ficarão posicionados?
+
+Eixo X = horizontal
+Eixo Y = vertical
+
+================================================
+
+Como fazer o link para um arquivo “.css" e em qual local ele fica no HTML.
+
+Dentro da tag <head></head> no arquivo HTML, precisamos inserir a tag <link rel="stylesheet" href="style.css"> .
+
+Assim:
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+===============================================
+
+O que é Hexadecimal?
+
+É um sistema de numeração posicional que representa os números em base 16. O 16 significa 16 símbolos sendo eles: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9 da base decimal e as letras A, B, C, D, E e F .
+
+Fonte: https://canaltech.com.br/produtos/O-que-e-sistema-hexadecimal/
+
+================================================
+
+Qual propriedade do CSS alinha os textos no centro?
+
+p {
+	text-align: center;
+}
+
+================================================
+
+O que a tag <br /> faz no HTML?
+
+Adiciona quebra de linha entre os elementos.
+
+================================================
+
+O que significa o sinal de + no CSS?
+
+Seleciona o elemento imediato (após) a ele.
+
+Exemplo:
+
+section, p + p {
+    color: red;
+}
+
+================================================
+
+Utilizando a propriedade border do CSS como ficaria uma borda verde, sólida com 2px de espessura. 
+
+section {
+    border: 2px solid green;
+}
+
+================================================
+
+Fique a vontade para adicionar qualquer anotação.
+
+Posicionamento é diferente de alinhamento.
+
+O código a seguir posiciona o elemento img no canto superior direito da tela.
+
+img {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+O posicionamento padrão dos elementos é **static**.
+
+O posicionamento fixed deixa o elemento fixo na tela independente do redimensionamento da viewport.
+
+Questionar o cliente se o elemento ficará fixo na tela ou se somente aparece ao lado de outro elemento.
+
+================================================
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nesta aula vimos a ferramenta web, Figma. Muito boa ferramenta. Vimos tags importantes do HTML e propriedades importantes no CSS. 
+
+Transformamos o layout do Figma em código e acessível no navegador.
+
+================================================
+
+Fique a vontade para adicionar qualquer anotação.
+
+Aprendi a utilizar a ferramenta WEB Codepen para enviar os desafios de código quando solicitado.
+
+Aprendi tambem a usar a ferramenta WEB imgur, um repositório de imagens gratuit onde conseguimos subir uma imagem e adiciona-las em nosso projeto.
+
+============================================================
+
+Stage 2 - etapa 2
+
+Fique a vontade para adicionar qualquer anotação.
+
+Neste novo projeto serão apresentados novos conceitos e também será trabalhado o que já foi visto no projeto anterior com a intenção de revisar alguns coneitos.
+
+============================================
+
+Qual a diferença do elemento <ol> para o <ul> ?
+
+OL = representa as listas ordenadas, do inglês Order List
+UL = representa as listas não ordenadas, do inglês Unordered List
+
+=============================================
+
+Por que existe tags semânticas no HTML?
+
+Servem para acessibilidade, ajuda os leitores de tela a identificar o que significa cada seção do site.
+
+E os motores de busca também são ajudados, assim eles conseguem identificar o elemento mais importante dentro de cada sessão do site. Desta forma conseguem indexar melhor as informações da página e priorizá-las para ranqueamento nos buscadores.
+
+===============================================
+
+Qual a diferença de margin e padding?
+
+Margin = espaçamento externo do elemento.
+Padding = preenchimento interno do elemento.
+
+================================================
+
+Como a ferramenta DevTools pode ajudar nós desenvolvedores?
+
+Através dela podemos identificar onde cada elemento está sendo renderizado na página através da inspeção de elementos. 
+
+Outra funcionalidade interessante que temos é e de fazer alteração pela ferrmanta e estas alterações serem aplicadas de imediato, mas não serem salvas. Após a atualização da página nossa alteração é desfeita.
+
+E acho que a funcionalidade principal ou uma das, é o retorno de erros que são retornados na aba Console. Nela conseguimos identificar motivs de comportamentos estranhos na página e localização de erros.
+
+==================================================
+
+Dê um exemplo abaixo utilizando a propriedade display: flex;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+===================================================
+
+Por que a acessibilidade e a refatoração é importante?
+
+Para as pessoa que precisam acessar seu site e tem limitação auditiva, motora ou visual. E também para melhorar a legibilidade do código facilitando a sua manutenção.
+
+====================================================
+
+Qual a propriedade do CSS transforma textos minúsculos em maíusculos?
+
+lowercase = minúscula
+uppercase = maiúscula
+
+====================================================
+
+Na propriedade margin: 40px 0; onde será adicionado 40px?
+
+No topo e na base do elemento.
+
+====================================================
+
+Explique a ordem de posicionamento da propriedade border-radius.
+
+Com esta propriedade é possível configurarmos os vértices  superiores e inferiores das bordas.
+
+Assim:
+
+button {
+  background: #69b99d;
+  border: 2px solid black;
+  padding: 15px 32px;
+
+	border-radius: 14px 6px;
+}
+
+Ah e border-radius é também um short-hand para as propriedades a seguir:
+
+   button {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+   }
+
+===================================================
+
+Explique abaixo as propriedades da função linear-gradient().
+
+Ele funciona em forma de função. Passamos os valores. A rotação é o primeiro valor, passamos ele em graus, 180deg, o restante do valores são referentes a cores. Todos estes valores devem estar entre os ().
+
+Devemos informar no mínimo duas ou mais cores diferentes para criar o efeito de gradiente.
+
+Os códigos das cores podem ser em rgb() ou rgba(),  hexadecimal, hsla() e hwb().
+
+As propriedades rgb() ou rgba(), hsla() e hwb(), também funcionam em forma de função. Dentro dos parênteses passamos os valores  referentes ao quanto queremos ver de cada cor. As cores bases são red = vermolho, green = verde e blue = azul.
+
+Exemplo:
+
+body {
+    background: linear-gradient(180deg, rgba(230, 255, 249, 0) 82.08%,
+		rgba(227, 255, 248, 0.38) 100%);
+}
+
+====================================================
+
+Fique a vontade para adicionar qualquer anotação.
+
+Nesta aula ajustamos um erro de digitação, a palavra exclusivos estava com acento agudo no i. E também ajustamos a opacidade do menu.

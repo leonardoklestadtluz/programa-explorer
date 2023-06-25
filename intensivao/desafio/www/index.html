@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- PRECONNECT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT STYLE -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Roboto&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- TITLE TAB -->
+  <title>Cover Intensivão Explorer</title>
+
+  <!-- PAGE STYLE -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img id="bkg-mobile" src="./assets/bkg-mobile.svg" alt="Imagem de astronauta navegando na galáxia">
+
+      <h1>Explore sem limites</h1>
+      <p id="slogan">porque o aprendizado é contínuo</p>
+
+      <button id="arrow">
+        <img src="./assets/arrow-down.svg" alt="Seta indicativa para rolar a página">
+      </button>
+    </header>
+
+    <main>
+      <div class="card">
+        <img class="planets" src="./assets/saturn.svg" alt="Imagem do planeta Saturno">
+        <h2 class="title-card">Não pare nunca</h2>
+        <p class="txt-card">Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não
+          pare nunca".
+          Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+      </div>
+
+      <div class="card">
+        <img class="planets" src="./assets/earth.svg" alt="Imagem do planeta Terra">
+        <h2 class="title-card">Só volta</h2>
+        <p class="txt-card">Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para
+          recomeçar. Às
+          vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+      </div>
+
+      <div class="card">
+        <img class="planets" src="./assets/mars.svg" alt="Imagem do planeta Marte">
+        <h2 class="title-card">Siga seu ritmo</h2>
+        <p class="txt-card">Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir.
+          Mesmo pequenos
+          passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo
+          final.</p>
+      </div>
+    </main>
+
+    <form>
+      <h2 class="title-form">Entre em contato</h2>
+
+      <fieldset>
+        <label class="sr-only" for="name">Nome</label>
+        <input type="text" id="name" placeholder="Seu nome">
+
+        <label class="sr-only" for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="E-mail">
+
+        <label class="sr-only" for="message">Mensagem</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem aqui.."></textarea>
+      </fieldset>
+
+      <button id="send">Enviar Mensagem</button>
+    </form>
+
+  </div>
+  <footer>
+    <span>&copy; 2023 - Rocketseat Explorer</span>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- PRECONNECTION -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oxygen+Mono&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- TITLE PAGE -->
+  <title>🔐 LKL S@fe</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- LEFT SIDE PAGE -->
+    <aside>
+      <img id="bkg-aside" src="./assets/background-aside.svg" alt="">
+
+      <div id="filter"></div>
+
+      <p id="slogan">Mais segurança e controle durante o acesso</p>
+
+      <img id="logo" src="./assets/logo.svg" alt="Imagem do logo">
+    </aside>
+
+    <!-- RIGHT SIDE PAGE -->
+    <main>
+      <h1>Iniciar Sessão</h1>
+      
+      <!-- FORM -->
+      <form action="">
+        <label class="label-input" for="email">E-mail</label> <br>
+        <input class="fields" id="email" type="text" placeholder="nome_de_usuario@email.com">
+
+        <label class="label-input" for="password">Senha</label>
+        <input class="fields" id="password" type="password" placeholder="Senha">
+
+        <div class="rememberme">
+          <input type="checkbox" name="rememberMe" id="input-rememberMe">
+          <label id="label-rememberMe" for="input-rememberMe">Lembrar-me</label>
+        </div>
+
+        <div class="buttons">
+          <a href="http://" id="reset-password">Recuperar senha</a>
+          <button>Entrar</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FONT STYLE -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- TITLE -->
+  <title>SPA - Universe</title>
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <a id="logo" href="/">
+      <img src="./assets/logo.svg" alt="Imagem do logo da página" />
+    </a>
+
+    <!-- MENU -->
+    <nav>
+      <a class="menu" href="/" onclick="route()">Home</a>
+      <a class="menu" href="/theUniverse" onclick="route()">O Universo</a>
+      <a class="menu" href="/exploration" onclick="route()">Exploração</a>
+    </nav>
+  </header>
+
+  <!-- CONTAINER -->
+  <section class="container">
+    <!-- MAIN -->
+    <main>
+      <!-- Dynamic content -->
+      <section id="app"></section>
+    </main>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    leonardo klestadt luz - 2022
+  </footer>
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
