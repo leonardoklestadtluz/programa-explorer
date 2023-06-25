@@ -5,6 +5,8 @@ import GlobalStyles from './styles/global'
 
 import theme from './styles/theme'
 
+import { AuthProvider } from './hooks/auth'
+
 // import { Details } from './pages/Details'
 // import { Home } from "./pages/Home";
 // import { SignIn} from './pages/Signin'
@@ -16,8 +18,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      
-      <Routes />
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>
 
       {/* <Profile /> */}
       {/* <SignUp /> */}
